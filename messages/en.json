@@ -58,8 +58,8 @@
               "EU resident card",
               "Residence card for work",
               "Residence card for study",
-              "Residence card for spouse reunification",
-              "Residence card for child reunification",
+              "Card for family reunification",
+              "Card for other circumstances",
               "Permanent residence card",
               "EU citizen registration",
               "Polish citizenship"
@@ -84,9 +84,8 @@
             "content": "Assistance in obtaining Polish citizenship. We guide you through all stages of the process, ensuring the most effective path to acquiring citizenship.",
             "list": [
               "Assessment of your chances of obtaining citizenship",
-              "Preparation of the necessary document package",
-              "Support at all stages of the process",
-              "Interview preparation (if required)"
+              "Obtaining citizenship through the Voivode",
+              "Obtaining citizenship through the President"
             ]
           },
           {
@@ -192,8 +191,10 @@
       "nip": "NIP: 5842817098",
       "email": "legalfox.gdansk@gmail.com",
       "city": "Gdańsk",
-      "address": "Jaskowa Dolina St. 15/113",
+      "address": "ul.Jaśkowa Dolina 15/113",
       "postalCode": "80-252",
+      "openingHours": "Mon – Fri: 08:00 – 16:00",
+      "telephoneNumber": "+48 534 990 917",
       "linksTitle": "Links",
       "home": "Home",
       "contacts": "Contacts",

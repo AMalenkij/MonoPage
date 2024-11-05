@@ -22,6 +22,8 @@ export default function Footer () {
           <div>
             <h4 className="text-lg font-bold mb-4">{tFooter('contactInfoTitle')}</h4>
             <ul className="space-y-2 text-lg">
+              <li className='font-semibold'>{tFooter('openingHours')}</li>
+              <li>{tFooter('telephoneNumber')}</li>
               <li>{tFooter('nip')}</li>
               <li>{tFooter('email')}</li>
               <li>{tFooter('city')}</li>

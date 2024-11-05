@@ -58,11 +58,10 @@
               "Karta rezydenta UE",
               "Karta pobytu na podstawie pracy",
               "Karta pobytu na podstawie nauki",
-              "Karta pobytu na podstawie łączenia małżonków",
-              "Karta pobytu na podstawie łączenia z dziećmi",
+              "Karta pobytu na podstawie połączenie z rodziną",
+              "Karta pobytu ze względu na inne okoliczności",
               "Karta stałego pobytu",
-              "Rejestracja obywateli UE",
-              "Obywatelstwo polskie"
+              "Rejestracja obywateli UE"
             ]
           },
           {
@@ -84,9 +83,8 @@
             "content": "Pomoc w uzyskaniu obywatelstwa polskiego. Przeprowadzimy cię przez wszystkie etapy procesu, zapewniając najskuteczniejszą drogę do uzyskania obywatelstwa.",
             "list": [
               "Ocena twoich szans na uzyskanie obywatelstwa",
-              "Przygotowanie niezbędnego pakietu dokumentów",
-              "Wsparcie na każdym etapie procesu",
-              "Przygotowanie do rozmowy (jeśli to konieczne)"
+              "Uznanie za obywatela polskiego",
+              "Nadania obywatelstwa przez Prezydenta RP"
             ]
           },
           {
@@ -192,7 +190,9 @@
       "nip": "NIP: 5842817098",
       "email": "legalfox.gdansk@gmail.com",
       "city": "Gdańsk",
-      "address": "ul. Jaskowa Dolina 15/113",
+      "address": "ul.Jaskowa Dolina 15/113",
+      "openingHours": "Pn – Pt: 08:00 – 16:00",
+      "telephoneNumber": "+48 534 990 917",
       "postalCode": "80-252",
       "linksTitle": "Linki",
       "home": "Strona główna",
