@@ -1,10 +1,11 @@
-import Link from "next/link";
 import { useTranslations } from 'next-intl'
+import Link from "next/link"
 
-import { cn } from "@/lib/utils";
-import { HOME_ROUTE } from "@/constants/routes";
-import { COMPANY_NAME } from "@/constants/setting";
-import LogoSvg from '@/public/svg/Logo';
+import { HOME_ROUTE } from "@/constants/routes"
+import { COMPANY_NAME } from "@/constants/setting"
+import { cn } from "@/lib/utils"
+import ElementLogo from '@/public/svg/ElementLogo'
+import LogoSvg from '@/public/svg/Logo'
 
 interface LogoProps {
   variant: "header" | "footer" | "dialog" | "map"
@@ -26,12 +27,10 @@ export default function Logo({ variant, className }: LogoProps) {
       <Link 
       className={variantClasses[variant]} href={HOME_ROUTE} 
       aria-label={t('backToHome')}>
-        <LogoSvg className="w-10 h-10 fill-primary" />
-        <div className="flex gap-x-1 text-2xl">
-          <h3>{COMPANY_NAME.first}</h3>
-          <h3 className="font-bold text-foreground-secondary">
-            {COMPANY_NAME.second}
-          </h3>
+        <div>
+        <ElementLogo className="w-8 h-8 fill-transparent stroke-primary ml-8 pt-5" />
+        <h3 className='text-5xl'>{COMPANY_NAME}</h3>
+        <h3 className='text-right text-sm text-primary'>usługi księgowe</h3>
         </div>
       </Link>
     );
@@ -44,7 +43,11 @@ export default function Logo({ variant, className }: LogoProps) {
       href={HOME_ROUTE}
       aria-label={t('backToHome')}
       >
-        <LogoSvg className="w-32 h-32 fill-primary" />
+      <div>
+        <ElementLogo className="w-8 h-8 fill-transparent stroke-primary ml-10 pt-5" />
+        <h3 className='text-6xl'>{COMPANY_NAME}</h3>
+        <h3 className='text-right text-sm text-primary'>usługi księgowe</h3>
+      </div>
       </Link>
     );
   }
@@ -52,7 +55,11 @@ export default function Logo({ variant, className }: LogoProps) {
   if (variant === "dialog") {
     return (
       <div className={variantClasses[variant]}>
-        <LogoSvg className="w-16 h-16 fill-primary" />
+                <div>
+        <ElementLogo className="w-8 h-8 fill-transparent stroke-primary ml-8 pt-5" />
+        <h3 className='text-5xl'>{COMPANY_NAME}</h3>
+        <h3 className='text-right text-sm text-primary'>usługi księgowe</h3>
+        </div>
       </div>
     );
   }

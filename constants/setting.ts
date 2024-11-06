@@ -1,7 +1,4 @@
-export const COMPANY_NAME={
-	first: "Legal",
-	second: "Fox"
-}
+export const COMPANY_NAME="BILANS"
 export const COMPANY_NAME_FULL = "LegalFox - Yuliia Vasylenko"
 
 //google map

@@ -6,6 +6,7 @@ import ContactForm from "@/components/ContactForm"
 import ProfileHighlights from "@/components/ProfileHighlights"
 import { TextEffect } from '@/components/core/TextEffect'
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -69,7 +70,18 @@ export default function Home() {
         </TextEffect>
         <Dialog>
       <DialogTrigger asChild>
-      <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button>
+      {/* <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8"/></Button> */}
+      <button className="no-underline disabled:cursor-not-allowed bg-white text-black active:bg-grey-300 border-transparent rounded-full group/arrow group/button inline-flex items-center overflow-hidden border text-base font-medium transition">
+      <span className="pl-6 pr-16 py-3 relative inline-flex items-center">
+        <span className="group-hover/button:-translate-x-1/3 group-hover/button:opacity-0 transition-[opacity,transform]">
+        {tHero('heroButton')}
+        </span>
+        <div className="relative flex items-center justify-end inset-x-6 !absolute">
+          <div className="group-hover/arrow:before:translate-x-0 absolute left-0 right-[2px] flex h-[1.5px] origin-right justify-end overflow-hidden rounded-full before:w-full before:translate-x-[calc(100%-16px)] before:rounded-full before:bg-current before:transition-transform"></div>
+          <ArrowRight className="text-current" size={12} />
+        </div>
+      </span>
+    </button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-1/3"> 
         <DialogHeader>
@@ -80,37 +92,15 @@ export default function Home() {
       </DialogContent>
     </Dialog>
       </section>
-        {/* <HeroImage /> */}
-      <div className="relative overflow-hidden xl:pr-20">
-      <StarIcon className="absolute top-[24%] left-[6%] sm:h-6 sm:w-6 h-5 w-5 fill-primary" />
-      <StarIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-6 sm:w-24 h-5 w-5 " />
-      <CirclePattern className='h-44 w-32 absolute left-[10%] bottom-[3%] -z-10' />
-      <BackgroundCircle className='absolute -bottom-1/4 w-full h-full -z-20 fill-popover' />
-      <ProfileHighlights 
-        className='absolute right-[5%] top-0' 
-        yearsOfExperience={8} 
-        rating={5}
-        tYears={tHero('years')}
-        tExperience={tHero('experience')}
-        tRating={tHero('rating')}
-        tOutOf={tHero('outOf')}
-        />
-      <Image 
-        src={Hero}
-        alt={tAbout('firstImageAlt')}
-        className="object-contain w-full h-full max-h-[85vh] min-h-[75vh]"
-        priority
-      />
-    </div>
     </div>
 {/* Services Section */}
-<Services />
+{/* <Services /> */}
 {/* About Section */}
-  <About />
+  {/* <About /> */}
   {/* Feedback */}
-  <Testimonials />
+  {/* <Testimonials /> */}
 {/* Contacts Section */}
-<Contacts />
+{/* <Contacts /> */}
 </LenisProvider>
   );
 }

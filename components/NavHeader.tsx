@@ -31,7 +31,7 @@ export default function Header() {
         />
       <nav className="items-center space-x-2 hidden md:flex">
         <NavMenu variant='header' />
-        <div className="flex items-center border-l border-foreground-secondary pl-4 space-x-2">
+        <div className="flex items-center pl-2 space-x-2">
           <ModeToggle 
             variant="dropdown"
             lightLabel={tModeToggle('lightLabel')}

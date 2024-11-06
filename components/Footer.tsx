@@ -13,11 +13,7 @@ export default function Footer () {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Company Info */}
-          <div className="flex flex-col items-center justify-center">
           <Logo variant='footer' />
-          <h3 className="text-lg font-bold mb-2">{tFooter('companyName')}</h3>
-            <p className="font-light text-center">{tFooter('slogan')}</p>
-          </div>
           {/* Contact Information */}
           <div>
             <h4 className="text-lg font-bold mb-4">{tFooter('contactInfoTitle')}</h4>
