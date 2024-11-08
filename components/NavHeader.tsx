@@ -25,7 +25,6 @@ export default function Header() {
         english: tLanguageToggle('english'),
         polski: tLanguageToggle('polski'),
         ukrainian: tLanguageToggle('ukrainian'),
-        russian: tLanguageToggle('russian'),
         changeLanguage: tLanguageToggle('changeLanguage'),
         }}
         />
@@ -44,7 +43,6 @@ export default function Header() {
             englishLabel={tLanguageToggle('english')}
             polishLabel={tLanguageToggle('polski')}
             ukrainianLabel={tLanguageToggle('ukrainian')}
-            russianLabel={tLanguageToggle('russian')}
             changeLanguageLabel={tLanguageToggle('changeLanguage')}
           />
         </div>

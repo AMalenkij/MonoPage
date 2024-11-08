@@ -18,7 +18,6 @@ interface MobileMenuProps {
     english: string;
     polski: string;
     ukrainian: string;
-    russian: string;
     changeLanguage: string;
   };
   className?: string;
@@ -43,7 +42,6 @@ export default function MobileMenu({
             englishLabel={tLanguageToggle.english}
             polishLabel={tLanguageToggle.polski}
             ukrainianLabel={tLanguageToggle.ukrainian}
-            russianLabel={tLanguageToggle.russian}
             changeLanguageLabel={tLanguageToggle.changeLanguage}
           />
           <ModeToggle

@@ -21,7 +21,6 @@ interface LanguageToggleProps {
   englishLabel: string
   polishLabel: string
   ukrainianLabel: string
-  russianLabel: string
   changeLanguageLabel: string
 }
 
@@ -30,7 +29,6 @@ export default function LanguageToggle({
   englishLabel,
   polishLabel,
   ukrainianLabel,
-  russianLabel,
   changeLanguageLabel
 }: LanguageToggleProps) {
   const router = useRouter()
@@ -72,9 +70,6 @@ export default function LanguageToggle({
           <DropdownMenuItem onClick={() => changeLanguage('ua')}>
             {ukrainianLabel}
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => changeLanguage('ru')}>
-            {russianLabel}
-          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     )
@@ -89,7 +84,6 @@ export default function LanguageToggle({
             {renderLanguageButton('en', englishLabel)}
             {renderLanguageButton('pl', polishLabel)}
             {renderLanguageButton('ua', ukrainianLabel)}
-            {renderLanguageButton('ru', russianLabel)}
           </ul>
         </AccordionContent>
       </AccordionItem>
