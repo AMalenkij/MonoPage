@@ -2,6 +2,7 @@ import React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import { ArrowRight } from "lucide-react"
+
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
@@ -53,12 +54,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           ref={ref}
           {...props}
         >
-          <span className="pl-6 pr-16 py-3 relative inline-flex items-center">
-            <span className="group-hover/arrow:-translate-x-1/3 group-hover/arrow:opacity-0 transition-all duration-200">
+          <span className="relative inline-flex items-center py-3 pr-16 pl-6">
+            <span className="group-hover/arrow:-translate-x-1/3 transition-all duration-200 group-hover/arrow:opacity-0">
               {children}
             </span>
-            <div className="flex items-center justify-end absolute inset-x-6">
-              <div className="group-hover/arrow:before:translate-x-0 absolute left-0 right-[2px] flex h-[1.5px] origin-right justify-end overflow-hidden rounded-full before:w-full before:translate-x-[calc(100%-16px)] before:rounded-full before:bg-current before:transition-transform before:duration-200" />
+            <div className="absolute inset-x-6 flex items-center justify-end">
+              <div className="absolute right-[2px] left-0 flex h-[1.5px] origin-right justify-end overflow-hidden rounded-full before:w-full before:translate-x-[calc(100%-16px)] before:rounded-full before:bg-current before:transition-transform before:duration-200 group-hover/arrow:before:translate-x-0" />
               <ArrowRight className="text-current" size={12} />
             </div>
           </span>
