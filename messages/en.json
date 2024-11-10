@@ -42,99 +42,78 @@
 			"heroButton": "Submit a request"
 		},
 		"ServicesSection": {
-			"title": "Our Services",
-			"subTitle": "We offer a full range of services for legalizing and employing foreigners in Poland, with an individual approach to each client.",
-			"cards": [
+			"title": "Бухгалтерські послуги BILANCE",
+			"subTitle": "Ми надаємо повний спектр послуг із легалізації та працевлаштування іноземців у Польщі з індивідуальним підходом до кожного клієнта.",
+			"footer": "Залишайте бухгалтерію нам, а самі займайтесь розвитком вашого бізнесу!",
+			"services": [
 				{
-					"id": "karta-pobytu",
-					"heading": "Residence Card",
-					"subHeading": "Karta Pobytu",
-					"content": "Comprehensive handling of all types of residence cards: temporary stay (Czasowy), permanent stay (Stały), EU Blue Card (Blue Card), and EU resident card. Grounds: work, study, family reunification, marriage to a Polish citizen, business, and more.",
-					"list": [
-						"Temporary stay (Czasowy)",
-						"Permanent stay (Stały)",
-						"EU Blue Card",
-						"EU resident card",
-						"Residence card for work",
-						"Residence card for study",
-						"Card for family reunification",
-						"Card for other circumstances",
-						"Permanent residence card",
-						"EU citizen registration",
-						"Polish citizenship"
+					"id": "1",
+					"subTitle": "Повний бухгалтерський облік для великих компаній",
+					"title": "Ведення бухгалтерських книг",
+					"descriptionTitle": "Пропонуємо повний бухгалтерський облік для ТОВ та компаній, що перевищили 1,2 млн євро річного доходу:",
+					"serviceList": [
+						"Розробка облікової політики, ведення книг, облік основних засобів та нарахування ПДВ.",
+						"Щомісячна податкова звітність до ЗУС та Податкової, підготовка річних звітів."
+					],
+					"pricingTitle": "Вартість послуг:",
+					"pricingDetails": [
+						"Без ПДВ: від 450,00 злотих/місяць (до 20 документів).",
+						"З ПДВ: від 500,00 злотих/місяць (додаткові документи — 8,00 злотих/одиниця)."
 					]
 				},
 				{
-					"id": "business",
-					"heading": "Starting and Managing a Business",
-					"subHeading": "Założenie i prowadzenie firmy",
-					"content": "Assistance in setting up a company (JDG, Sp. z o.o.), consultations on legalization through business, and managing business activities in Poland. Full support at all stages.",
-					"list": [
-						"Assistance in setting up a company (JDG, Sp. z o.o.)",
-						"Consultations on legalization through business",
-						"Advice on managing business activities in Poland",
-						"Full support at all stages of your business development"
+					"id": "2",
+					"subTitle": "Оптимальне рішення для середнього бізнесу",
+					"title": "Податкова книга доходів і витрат (KPiR)",
+					"descriptionTitle": "Для підприємців та партнерських товариств, доходи яких не перевищили 1,2 млн євро:",
+					"serviceList": [
+						"Ведення KPiR, облік основних засобів, звітність до ЗУС."
+					],
+					"pricingTitle": "Вартість послуг:",
+					"pricingDetails": [
+						"Без ПДВ: від 180,00 злотих/місяць (до 20 документів).",
+						"З ПДВ: від 200,00 злотих/місяць (додаткові документи — 4,00 злотих/одиниця)."
 					]
 				},
 				{
-					"id": "citizenship",
-					"heading": "Polish Citizenship",
-					"subHeading": "Obywatelstwo polskie",
-					"content": "Assistance in obtaining Polish citizenship. We guide you through all stages of the process, ensuring the most effective path to acquiring citizenship.",
-					"list": [
-						"Assessment of your chances of obtaining citizenship",
-						"Obtaining citizenship through the Voivode",
-						"Obtaining citizenship through the President"
+					"id": "3",
+					"subTitle": "Спрощена система для малого бізнесу",
+					"title": "Єдиний податок",
+					"descriptionTitle": "Для малого бізнесу з доходом до 150 тис. євро:",
+					"serviceList": [
+						"Облік доходів, звітність, підтримка при податкових перевірках."
+					],
+					"pricingTitle": "Вартість послуг:",
+					"pricingDetails": [
+						"Без реєстру ПДВ: 170,00 злотих/місяць.",
+						"З реєстром ПДВ: 200,00 злотих/місяць.",
+						"Річне розрахування PIT-28: 100,00 злотих."
 					]
 				},
 				{
-					"id": "marriage",
-					"heading": "Marriage and Family Matters",
-					"subHeading": "Małżeństwo i sprawy rodzinne",
-					"content": "Assistance in registering marriages in Poland, legalization based on marriage or cohabitation with a Polish citizen, and family reunification.",
-					"list": [
-						"Marriage registration in Poland",
-						"Legalization based on marriage with a Polish citizen",
-						"Legalization based on cohabitation with a Polish citizen",
-						"Assistance with family reunification"
+					"id": "4",
+					"subTitle": "Комплексне управління персоналом",
+					"title": "Кадровий облік і зарплата",
+					"descriptionTitle": "Для компаній, що працевлаштовують співробітників:",
+					"serviceList": [
+						"Документація договорів, розрахунок зарплати, підготовка PIT-11, реєстрація в ZUS, звітність."
+					],
+					"pricingTitle": "Вартість послуг:",
+					"pricingDetails": [
+						"Щомісячний облік на одного співробітника: 40,00 злотих/особа."
 					]
 				},
 				{
-					"id": "documents",
-					"heading": "Documents and Registrations",
-					"subHeading": "Dokumenty i rejestracje",
-					"content": "Assistance in obtaining various documents: PIT-37 tax return, vehicle registration, driver's license exchange. Assistance in obtaining 800+ or RKO 1000+ benefits.",
-					"list": [
-						"PIT-37 tax return preparation and submission",
-						"Vehicle registration",
-						"Driver's license exchange to Polish",
-						"Assistance in obtaining 800+ or RKO 1000+ benefits",
-						"Other types of registrations and document handling"
-					]
-				},
-				{
-					"id": "consultation",
-					"heading": "Consultation",
-					"subHeading": "Konsultacja",
-					"content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly analyze your situation and provide the best solutions."
-				},
-				{
-					"id": "for-employers",
-					"heading": "Services for Employers",
-					"subHeading": "Usługi dla pracodawców",
-					"content": "For employers, we offer comprehensive and professional services for those who are just starting to employ foreigners in their company, as well as for those who want to extend the stay and employment of their current employees.",
-					"list": [
-						"Registration of a declaration to employ a foreigner and notification to the labor office",
-						"Obtaining a work permit",
-						"Obtaining a residence and work permit",
-						"Annex No. 1 to the temporary residence and work permit",
-						"Obtaining information from the county office on the lack of labor market availability",
-						"Legal representation before authorities",
-						"Assistance in verifying and determining the current status of a foreigner",
-						"Consultations on choosing a method of work legalization",
-						"Preparation and completion of all forms",
-						"Receiving correspondence and meeting deadlines"
-					]
+					"id": "5",
+					"subTitle": "Сучасне рішення для віддаленого обліку",
+					"title": "Онлайн бухгалтерія",
+					"descriptionTitle": "Гібридний формат для зайнятих підприємців, що дозволяє надсилати документи електронною поштою без візитів у офіс:",
+					"serviceList": [
+						"Аналіз, облік, звітність, підтримка вашого бізнесу."
+					],
+					"pricingTitle": "Вартість послуг обговорюється індивідуально.",
+					"pricingDetails": [],
+					"specialNotes": "Спеціалізовані послуги для медичних працівників, IT-фахівців, агентів з нерухомості, архітекторів."
 				}
 			]
 		},
@@ -207,7 +186,7 @@
 		"StickyScrollToTopButton": {
 			"scrollToTop": "Scroll to top"
 		},
-    "Logo": {
+		"Logo": {
 			"subLogo": "Biuro Rachunkowe"
 		},
 		"Nav": {
