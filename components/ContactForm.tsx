@@ -1,57 +1,61 @@
 "use client"
 
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { useLocale } from 'next-intl';
+import type React from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+import { useLocale } from 'next-intl'
 
 
 import { Link } from '@/lib/routing'
-import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Button } from "@/components/ui/button"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Checkbox } from "@/components/ui/checkbox"
 import { PRIVACY_POLICY_ROUTE } from "@/constants/routes"
 import { useToast } from "@/hooks/use-toast"
+import FloatingLabelInput from './FloatingLabelInput'
+import FloatingLabelTextarea from './FloatingLabelTextarea'
 
 // Define the shape of the contactTranslations prop
 interface ContactTranslations {
-  labelPrivacyPolicy: string;
-  privacyLabel: string;
-  privacyError: string;
-  privacyPolicy:string;
-  nameLabel: string;
-  namePlaceholder: string;
-  phoneLabel: string;
-  phonePlaceholder: string;
-  messageLabel: string;
-  messagePlaceholder: string;
-  submitButton: string;
-  successMessage: string;
-  errorMessage: string;
-  errorOccurred: string;
-  ValidationMessages: {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  ValidationMessages: any
+  labelPrivacyPolicy: string
+  privacyLabel: string
+  privacyError: string
+  privacyPolicy: string
+  nameLabel: string
+  namePlaceholder: string
+  phoneLabel: string
+  phonePlaceholder: string
+  messageLabel: string
+  messagePlaceholder: string
+  submitButton: string
+  successMessage: string
+  errorMessage: string
+  errorOccurred: string
+  ValFormFieldationMessages: {
     name: {
-      minLength: string;
-    };
+      minLength: string
+    }
     phone: {
-      invalid: string;
-      length: string;
-    };
+      invalid: string
+      length: string
+    }
     message: {
-      minLength: string;
-    };
-  };
+      minLength: string
+    }
+  }
 }
 
 // Define the shape of the form values
 interface FormValues {
-  name: string;
-  phone: string;
-  message: string;
-  privacyConsent: boolean;
+  name: string
+  phone: string
+  message: string
+  privacyConsent: boolean
 }
 
 const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ contactTranslations }) => {
@@ -66,8 +70,8 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
         message: contactTranslations.ValidationMessages.phone.invalid,
       })
       .refine((value) => {
-        const digits = value.replace(/\D/g, '');
-        return digits.length >= 10 && digits.length <= 15;
+        const digits = value.replace(/\D/g, '')
+        return digits.length >= 10 && digits.length <= 15
       }, {
         message: contactTranslations.ValidationMessages.phone.length,
       }),
@@ -77,7 +81,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
     privacyConsent: z.boolean().refine((val) => val === true, {
       message: contactTranslations.privacyError,
     }),
-  });
+  })
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -87,7 +91,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
       message: "",
       privacyConsent: false,
     },
-  });
+  })
 
   const onSubmit = async (values: FormValues) => {
     try {
@@ -97,16 +101,16 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(values),
-      });
+      })
       if (response.ok) {
         toast({
           title: "Success",
           description: contactTranslations.successMessage,
           duration: 15000
         })
-        form.reset();
+        form.reset()
       } else {
-        const errorData = await response.json();
+        const errorData = await response.json()
         toast({
           title: "Error",
           description: `${contactTranslations.errorMessage} ${errorData.error}`,
@@ -115,7 +119,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
         })
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error:', error)
       toast({
         title: "Error",
         description: contactTranslations.errorOccurred,
@@ -123,7 +127,7 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
         duration: 15000
       })
     }
-  };
+  }
 
   return (
     <Form {...form}>
@@ -134,11 +138,11 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-              <span className='text-destructive'>*</span>
-              {contactTranslations.nameLabel}
+                <span className='text-destructive'>*</span>
+                {contactTranslations.nameLabel}
               </FormLabel>
               <FormControl>
-                <Input placeholder={contactTranslations.namePlaceholder} {...field} />
+                <FloatingLabelInput id="name" label={contactTranslations.namePlaceholder} {...field}/>
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -150,11 +154,11 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-              <span className='text-destructive'>*</span>
-              {contactTranslations.phoneLabel}
+                <span className='text-destructive'>*</span>
+                {contactTranslations.phoneLabel}
               </FormLabel>
               <FormControl>
-                <Input placeholder={contactTranslations.phonePlaceholder} {...field} />
+              <FloatingLabelInput id="phone" label={contactTranslations.phonePlaceholder} {...field}/>
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -167,7 +171,8 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
             <FormItem>
               <FormLabel>{contactTranslations.messageLabel}</FormLabel>
               <FormControl>
-                <Textarea placeholder={contactTranslations.messagePlaceholder} {...field} />
+                <FloatingLabelTextarea id="message" label={contactTranslations.messagePlaceholder} {...field}/>
+                {/* <Textarea placeholder={contactTranslations.messagePlaceholder} {...field} /> */}
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -181,33 +186,33 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
           render={({ field }) => (
             <FormItem className='space-x-2'>
               <div className='flex items-center space-x-2'>
-              <FormControl>
-                <Checkbox
-                  checked={field.value}
-                  onCheckedChange={field.onChange}
-                  className='w-5 h-5'
-        />
-              </FormControl>
-                <FormLabel className='text-lg font-light'>
-                <span className='text-destructive text-lg font-light'>*</span>
-                {contactTranslations.privacyLabel}
-                <Button
-                  variant="link"
-                  asChild
-                  className="pl-1 hover:underline text-lg font-light inline"
-                  aria-label={contactTranslations.labelPrivacyPolicy}
-                >
-                <Link href={PRIVACY_POLICY_ROUTE}>{contactTranslations.privacyPolicy}</Link>
-                </Button>
+                <FormControl>
+                  <Checkbox
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                    className="h-5 w-5"
+                  />
+                </FormControl>
+                <FormLabel className="font-light text-lg">
+                  <span className="font-light text-destructive text-lg">*</span>
+                  {contactTranslations.privacyLabel}
+                  <Button
+                    variant="link"
+                    asChild
+                    className="inline pl-1 font-light text-lg hover:underline"
+                    aria-label={contactTranslations.labelPrivacyPolicy}
+                  >
+                    <Link href={PRIVACY_POLICY_ROUTE}>{contactTranslations.privacyPolicy}</Link>
+                  </Button>
                 </FormLabel>
-                </div>
-                <FormMessage />
+              </div>
+              <FormMessage />
             </FormItem>
           )}
         />
       </form>
     </Form>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
