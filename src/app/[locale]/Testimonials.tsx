@@ -2,11 +2,11 @@ import React from 'react';
 import { Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/lib/utils";
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import GoogleLogo from '@/public/svg/GoogleLogo'
 import { Button } from '@/components/ui/button'
-import { LINK_TO_MAP } from '@/src/constants/links';
+import { LINK_TO_MAP } from '@/constants/links';
 
 interface HighlightsProps {
   rating: number;

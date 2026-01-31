@@ -34,16 +34,16 @@ const ScrollableContentWithTOC: React.FC<ScrollableContentWithTOCProps> = ({ sec
 
   return (
     <div className="justify-between hidden lg:flex flex-row">
-      <TableOfContents 
-        sections={sections} 
-        activeSection={activeSection} 
-        scrollToSection={scrollToSection} 
+      <TableOfContents
+        sections={sections}
+        activeSection={activeSection}
+        scrollToSection={scrollToSection}
       />
-      <Content 
-        sections={sections} 
-        activeSection={activeSection} 
-        handleInView={handleInView} 
-        sectionRefs={sectionRefs} 
+      <Content
+        sections={sections}
+        activeSection={activeSection}
+        handleInView={handleInView}
+        sectionRefs={sectionRefs}
       />
     </div>
   );
@@ -60,12 +60,11 @@ const TableOfContents: React.FC<{
         <li key={section.id}>
           <Button
             variant="link"
-            className={`cursor-pointer relative py-6 px-4 text-xl ${
-              activeSection === section.id ? '' : 'text-primary/60'
-            }`}
+            className={`cursor-pointer relative py-6 px-4 text-xl ${activeSection === section.id ? '' : 'text-primary/60'
+              }`}
             onClick={() => scrollToSection(section.id)}
           >
-            <span 
+            <span
               className={`absolute left-0 top-0 bottom-0 w-1 transition-all duration-300 ease-in-out  
                 ${activeSection === section.id ? 'w-1 rounded-sm bg-primary' : 'bg-accent'}
               `}
@@ -88,7 +87,7 @@ const Content: React.FC<{
 }> = React.memo(({ sections, activeSection, handleInView, sectionRefs }) => (
   <div className="w-1/2 p-4 overflow-y-hidden h-full">
     {sections.map((section) => (
-      <SectionContent 
+      <SectionContent
         key={section.id}
         section={section}
         isActive={activeSection === section.id}
@@ -108,7 +107,7 @@ const SectionContent: React.FC<{
   sectionRefs: React.MutableRefObject<{ [key: string]: HTMLDivElement | null }>;
 }> = React.memo(({ section, isActive, handleInView, sectionRefs }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { 
+  const isInView = useInView(ref, {
     once: false,
     margin: "0% 0px -75% 0px"
   });
@@ -130,7 +129,7 @@ const SectionContent: React.FC<{
         {section.title}
         <span className="text-2xl font-bold mb-2 text-primary uppercase">{section.subTitle}</span>
       </h4>
-      <ListOfServices content={section.content} list={section.list}/>
+      <ListOfServices content={section.content} list={section.list} />
     </div>
   );
 });

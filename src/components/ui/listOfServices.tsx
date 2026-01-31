@@ -13,8 +13,8 @@ const ListOfServices: React.FC<SectionContentProps> = ({ content, list }) => {
       {list && (
         <ul>
           {list.map((item, index) => (
-            <li 
-              className='pt-2 font-semibold text-xl flex items-start gap-x-2' 
+            <li
+              className='pt-2 font-semibold text-xl flex items-start gap-x-2'
               key={index}
             >
               <CheckCircledIcon className='min-w-5 min-h-5 mt-1' />

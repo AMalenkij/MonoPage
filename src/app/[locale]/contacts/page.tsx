@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card"
 
 import { InView } from '@/components/core/InView'
-import { LINK_TO_MAP } from '@/src/constants/links'
-import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/src/constants/setting'
+import { LINK_TO_MAP } from '@/constants/links'
+import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/constants/setting'
 
 
 export default function Contacts() {

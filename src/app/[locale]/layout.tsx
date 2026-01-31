@@ -7,7 +7,7 @@ import Head from 'next/head'
 import "./globals.css";
 import Header from '@/components/NavHeader'
 import Footer from "@/components/Footer"
-import ThemeProvider from '@/src/providers/ThemeProvider'
+import ThemeProvider from '@/providers/ThemeProvider'
 import type { Metadata } from "next"
 import StickyScrollToTopButton from '@/components/StickyScrollToTopButton'
 import { Toaster } from "@/components/ui/toaster"
@@ -15,9 +15,8 @@ import { Toaster } from "@/components/ui/toaster"
 
 const raleway = Raleway({ subsets: ["cyrillic"] });
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations('Metadata');
   return {
     title: t('title'),
     description: t('description'),
@@ -27,14 +26,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function LocaleLayout({
   children,
-  params
+  params: { locale }
 }: {
   children: React.ReactNode
-  params: Promise<{ locale: string }>
+  params: { locale: string }
 }) {
-  const { locale } = await params;
-  const messages = await getMessages({ locale });
-  const tStickyScrollToTopButton = await getTranslations({ locale, namespace: 'Components.StickyScrollToTopButton' });
+  const messages = await getMessages()
+  const tStickyScrollToTopButton = await getTranslations('Components.StickyScrollToTopButton')
 
   return (
     <html lang={locale} suppressHydrationWarning>

@@ -42,102 +42,102 @@
       "rating": "Ocena: ",
       "outOf": "z 5"
     },
-      "ServicesSection": {
-        "title": "Nasze usługi",
-        "subTitle": "Oferujemy pełen zakres usług legalizacyjnych i zatrudnienia cudzoziemców w Polsce, z indywidualnym podejściem do każdego klienta.",
-        "cards": [
-          {
-            "id": "karta-pobytu",
-            "heading": "Karta pobytu",
-            "subHeading": "Karta Pobytu",
-            "content": "Kompleksowa obsługa w zakresie wszystkich typów kart pobytu: pobyt czasowy (Czasowy), pobyt stały (Stały), Niebieska Karta UE (Blue Card), karta rezydenta UE. Podstawy: praca, nauka, łączenie rodzin, małżeństwo z obywatelem Polski, działalność gospodarcza i inne.",
-            "list": [
-              "Pobyt czasowy (Czasowy)",
-              "Pobyt stały (Stały)",
-              "Niebieska Karta UE (Blue Card)",
-              "Karta rezydenta UE",
-              "Karta pobytu na podstawie pracy",
-              "Karta pobytu na podstawie nauki",
-              "Karta pobytu na podstawie połączenie z rodziną",
-              "Karta pobytu ze względu na inne okoliczności",
-              "Karta stałego pobytu",
-              "Rejestracja obywateli UE"
-            ]
-          },
-          {
-            "id": "business",
-            "heading": "Zakładanie i prowadzenie działalności gospodarczej",
-            "subHeading": "Założenie i prowadzenie firmy",
-            "content": "Pomoc w zakładaniu firmy (JDG, Sp. z o.o.), konsultacje w zakresie legalizacji poprzez działalność gospodarczą oraz prowadzenia biznesu w Polsce. Pełne wsparcie na każdym etapie.",
-            "list": [
-              "Pomoc w zakładaniu firmy (JDG, Sp. z o.o.)",
-              "Konsultacje dotyczące legalizacji poprzez biznes",
-              "Porady w zakresie prowadzenia działalności gospodarczej w Polsce",
-              "Pełne wsparcie na każdym etapie rozwoju twojej firmy"
-            ]
-          },
-          {
-            "id": "citizenship",
-            "heading": "Obywatelstwo polskie",
-            "subHeading": "Obywatelstwo polskie",
-            "content": "Pomoc w uzyskaniu obywatelstwa polskiego. Przeprowadzimy cię przez wszystkie etapy procesu, zapewniając najskuteczniejszą drogę do uzyskania obywatelstwa.",
-            "list": [
-              "Ocena twoich szans na uzyskanie obywatelstwa",
-              "Uznanie za obywatela polskiego",
-              "Nadania obywatelstwa przez Prezydenta RP"
-            ]
-          },
-          {
-            "id": "marriage",
-            "heading": "Małżeństwo i sprawy rodzinne",
-            "subHeading": "Małżeństwo i sprawy rodzinne",
-            "content": "Pomoc w zawieraniu małżeństw na terenie Polski, legalizacja na podstawie małżeństwa lub konkubinatu z obywatelem Polski. Wsparcie w zakresie łączenia rodzin.",
-            "list": [
-              "Zawieranie małżeństw na terenie Polski",
-              "Legalizacja na podstawie małżeństwa z obywatelem Polski",
-              "Legalizacja na podstawie konkubinatu z obywatelem Polski",
-              "Wsparcie w zakresie łączenia rodzin"
-            ]
-          },
-          {
-            "id": "documents",
-            "heading": "Dokumenty i rejestracje",
-            "subHeading": "Dokumenty i rejestracje",
-            "content": "Pomoc w uzyskaniu różnych dokumentów: rozliczenie PIT-37, rejestracja pojazdu, wymiana prawa jazdy. Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+.",
-            "list": [
-              "Rozliczenie i złożenie deklaracji podatkowej PIT-37",
-              "Rejestracja pojazdu",
-              "Wymiana prawa jazdy na polskie",
-              "Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+",
-              "Inne rodzaje rejestracji i uzyskiwania dokumentów"
-            ]
-          },
-          {
-            "id": "consultation",
-            "heading": "Konsultacja",
-            "subHeading": "Konsultacja",
-            "content": "Oferujemy indywidualne konsultacje w celu omówienia wszystkich kwestii związanych z legalizacją i imigracją. Dokładnie analizujemy twoją sytuację i proponujemy najlepsze rozwiązania."
-          },
-          {
-            "id": "for-employers",
-            "heading": "Usługi dla pracodawców",
-            "subHeading": "Usługi dla pracodawców",
-            "content": "Dla pracodawców oferujemy kompleksową i profesjonalną obsługę zarówno dla tych, którzy dopiero rozpoczynają proces zatrudnienia cudzoziemców w swojej firmie, jak i dla tych, którzy chcą przedłużyć pobyt i pracę swoich pracowników.",
-            "list": [
-              "Rejestracja oświadczenia o powierzeniu pracy cudzoziemcowi i zgłoszenie do urzędu pracy",
-              "Uzyskanie zezwolenia na pracę",
-              "Uzyskanie zezwolenia na pobyt i pracę",
-              "Załącznik nr 1 do zezwolenia na pobyt czasowy i pracę",
-              "Uzyskanie informacji od starosty o braku możliwości zaspokojenia potrzeb kadrowych",
-              "Reprezentacja prawna przed organami",
-              "Pomoc w sprawdzaniu i określaniu bieżącego statusu cudzoziemca",
-              "Konsultacje w zakresie wyboru sposobu legalizacji pracy",
-              "Sporządzanie i kompletowanie wszystkich formularzy",
-              "Odbieranie korespondencji i dotrzymywanie terminów"
-            ]
-          }
-        ]
-      },    
+    "ServicesSection": {
+      "title": "Nasze usługi",
+      "subTitle": "Oferujemy pełen zakres usług legalizacyjnych i zatrudnienia cudzoziemców w Polsce, z indywidualnym podejściem do każdego klienta.",
+      "cards": [
+        {
+          "id": "karta-pobytu",
+          "heading": "Karta pobytu",
+          "subHeading": "Karta Pobytu",
+          "content": "Kompleksowa obsługa w zakresie wszystkich typów kart pobytu: pobyt czasowy (Czasowy), pobyt stały (Stały), Niebieska Karta UE (Blue Card), karta rezydenta UE. Podstawy: praca, nauka, łączenie rodzin, małżeństwo z obywatelem Polski, działalność gospodarcza i inne.",
+          "list": [
+            "Pobyt czasowy (Czasowy)",
+            "Pobyt stały (Stały)",
+            "Niebieska Karta UE (Blue Card)",
+            "Karta rezydenta UE",
+            "Karta pobytu na podstawie pracy",
+            "Karta pobytu na podstawie nauki",
+            "Karta pobytu na podstawie połączenie z rodziną",
+            "Karta pobytu ze względu na inne okoliczności",
+            "Karta stałego pobytu",
+            "Rejestracja obywateli UE"
+          ]
+        },
+        {
+          "id": "business",
+          "heading": "Zakładanie i prowadzenie działalności gospodarczej",
+          "subHeading": "Założenie i prowadzenie firmy",
+          "content": "Pomoc w zakładaniu firmy (JDG, Sp. z o.o.), konsultacje w zakresie legalizacji poprzez działalność gospodarczą oraz prowadzenia biznesu w Polsce. Pełne wsparcie na każdym etapie.",
+          "list": [
+            "Pomoc w zakładaniu firmy (JDG, Sp. z o.o.)",
+            "Konsultacje dotyczące legalizacji poprzez biznes",
+            "Porady w zakresie prowadzenia działalności gospodarczej w Polsce",
+            "Pełne wsparcie na każdym etapie rozwoju twojej firmy"
+          ]
+        },
+        {
+          "id": "citizenship",
+          "heading": "Obywatelstwo polskie",
+          "subHeading": "Obywatelstwo polskie",
+          "content": "Pomoc w uzyskaniu obywatelstwa polskiego. Przeprowadzimy cię przez wszystkie etapy procesu, zapewniając najskuteczniejszą drogę do uzyskania obywatelstwa.",
+          "list": [
+            "Ocena twoich szans na uzyskanie obywatelstwa",
+            "Uznanie za obywatela polskiego",
+            "Nadania obywatelstwa przez Prezydenta RP"
+          ]
+        },
+        {
+          "id": "marriage",
+          "heading": "Małżeństwo i sprawy rodzinne",
+          "subHeading": "Małżeństwo i sprawy rodzinne",
+          "content": "Pomoc w zawieraniu małżeństw na terenie Polski, legalizacja na podstawie małżeństwa lub konkubinatu z obywatelem Polski. Wsparcie w zakresie łączenia rodzin.",
+          "list": [
+            "Zawieranie małżeństw na terenie Polski",
+            "Legalizacja na podstawie małżeństwa z obywatelem Polski",
+            "Legalizacja na podstawie konkubinatu z obywatelem Polski",
+            "Wsparcie w zakresie łączenia rodzin"
+          ]
+        },
+        {
+          "id": "documents",
+          "heading": "Dokumenty i rejestracje",
+          "subHeading": "Dokumenty i rejestracje",
+          "content": "Pomoc w uzyskaniu różnych dokumentów: rozliczenie PIT-37, rejestracja pojazdu, wymiana prawa jazdy. Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+.",
+          "list": [
+            "Rozliczenie i złożenie deklaracji podatkowej PIT-37",
+            "Rejestracja pojazdu",
+            "Wymiana prawa jazdy na polskie",
+            "Wsparcie w uzyskaniu świadczeń 800+ lub RKO 1000+",
+            "Inne rodzaje rejestracji i uzyskiwania dokumentów"
+          ]
+        },
+        {
+          "id": "consultation",
+          "heading": "Konsultacja",
+          "subHeading": "Konsultacja",
+          "content": "Oferujemy indywidualne konsultacje w celu omówienia wszystkich kwestii związanych z legalizacją i imigracją. Dokładnie analizujemy twoją sytuację i proponujemy najlepsze rozwiązania."
+        },
+        {
+          "id": "for-employers",
+          "heading": "Usługi dla pracodawców",
+          "subHeading": "Usługi dla pracodawców",
+          "content": "Dla pracodawców oferujemy kompleksową i profesjonalną obsługę zarówno dla tych, którzy dopiero rozpoczynają proces zatrudnienia cudzoziemców w swojej firmie, jak i dla tych, którzy chcą przedłużyć pobyt i pracę swoich pracowników.",
+          "list": [
+            "Rejestracja oświadczenia o powierzeniu pracy cudzoziemcowi i zgłoszenie do urzędu pracy",
+            "Uzyskanie zezwolenia na pracę",
+            "Uzyskanie zezwolenia na pobyt i pracę",
+            "Załącznik nr 1 do zezwolenia na pobyt czasowy i pracę",
+            "Uzyskanie informacji od starosty o braku możliwości zaspokojenia potrzeb kadrowych",
+            "Reprezentacja prawna przed organami",
+            "Pomoc w sprawdzaniu i określaniu bieżącego statusu cudzoziemca",
+            "Konsultacje w zakresie wyboru sposobu legalizacji pracy",
+            "Sporządzanie i kompletowanie wszystkich formularzy",
+            "Odbieranie korespondencji i dotrzymywanie terminów"
+          ]
+        }
+      ]
+    },
     "AboutUsSection": {
       "firstImageAlt": "zdjęcie naszego zespołu",
       "secondImageAlt": "zdjęcie założyciela firmy",

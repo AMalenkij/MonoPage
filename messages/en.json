@@ -1,13 +1,13 @@
 {
-    "Metadata": {
-      "title": "LegalFox - Legalization of Foreigners in Poland, Residence Permits, Citizenship, Company Registration",
-      "description": "LegalFox - assistance for foreigners in Poland with obtaining Residence Permits (Blue Card, temporary and permanent residence, EU resident card), Polish citizenship, company registration (JDG, Sp. z o.o.), as well as consultations on legalization, document processing, car registration, driver's license replacement, PIT-37 calculations, and other services.",
-      "keywords": "Legalization in Poland, Residence Permit, Blue Card, Permanent Residence, EU Resident Card, company registration in Poland, Polish citizenship, documents in Poland, assistance to foreigners, LegalFox"
-    },
+  "Metadata": {
+    "title": "LegalFox - Legalization of Foreigners in Poland, Residence Permits, Citizenship, Company Registration",
+    "description": "LegalFox - assistance for foreigners in Poland with obtaining Residence Permits (Blue Card, temporary and permanent residence, EU resident card), Polish citizenship, company registration (JDG, Sp. z o.o.), as well as consultations on legalization, document processing, car registration, driver's license replacement, PIT-37 calculations, and other services.",
+    "keywords": "Legalization in Poland, Residence Permit, Blue Card, Permanent Residence, EU Resident Card, company registration in Poland, Polish citizenship, documents in Poland, assistance to foreigners, LegalFox"
+  },
   "Header": {
     "MobileMenu": {
       "MobileMenu": "Mobile menu",
-      "ToggleMenu" : "Toggle menu"
+      "ToggleMenu": "Toggle menu"
     },
     "ModeToggle": {
       "lightLabel": "Light",
@@ -22,16 +22,16 @@
       "ukrainian": "Ukrainian",
       "russian": "Russian"
     }
-},
-"Testimonials": {
-  "title": "Opinie naszych klientów",
-  "googleReviews": "Nasze opinie w Google",
-  "totalReviews": "{count} opinii",
-  "ratingAriaLabel": "Ocena {rating} z 5",
-  "review1": "Szczerze polecam! Bardzo szybko pomogła, znalazła odpowiednie opcje legalizacji w oparciu o sytuację. Julia to najlepszy specjalista! Polecam 💚",
-  "review2": "Chcę podziękować Julii i jej zespołowi za pomoc w uzyskaniu karty pobytu. Prawdziwi profesjonaliści. Polecam i będę polecać Was moim znajomym. Bardzo dziękuję 😊 Życzę sukcesów i prosperity.",
-  "review3": "Skontaktowałam się z Julią we wrześniu w sprawie uzyskania karty pobytu. Dziś otrzymałam kartę 😱☺️ Nadal nie mogę w to uwierzyć, wcześniej czekałam około 2 lat i nie było żadnego postępu w sprawie. Julio, bardzo dziękuję. Gdybym wiedziała, skontaktowałabym się z Tobą dużo wcześniej. Będę polecać was wszystkim moim znajomym. Jeszcze raz bardzo dziękuję 😊"
-},
+  },
+  "Testimonials": {
+    "title": "Opinie naszych klientów",
+    "googleReviews": "Nasze opinie w Google",
+    "totalReviews": "{count} opinii",
+    "ratingAriaLabel": "Ocena {rating} z 5",
+    "review1": "Szczerze polecam! Bardzo szybko pomogła, znalazła odpowiednie opcje legalizacji w oparciu o sytuację. Julia to najlepszy specjalista! Polecam 💚",
+    "review2": "Chcę podziękować Julii i jej zespołowi za pomoc w uzyskaniu karty pobytu. Prawdziwi profesjonaliści. Polecam i będę polecać Was moim znajomym. Bardzo dziękuję 😊 Życzę sukcesów i prosperity.",
+    "review3": "Skontaktowałam się z Julią we wrześniu w sprawie uzyskania karty pobytu. Dziś otrzymałam kartę 😱☺️ Nadal nie mogę w to uwierzyć, wcześniej czekałam około 2 lat i nie było żadnego postępu w sprawie. Julio, bardzo dziękuję. Gdybym wiedziała, skontaktowałabym się z Tobą dużo wcześniej. Będę polecać was wszystkim moim znajomym. Jeszcze raz bardzo dziękuję 😊"
+  },
   "HomePage": {
     "HeroSection": {
       "experience": "Experience",
@@ -42,103 +42,103 @@
       "subTitle": "Comprehensive legalization solutions in Poland for individuals and companies. Expert support at all stages: from document processing to employment. Entrust us with your legal matters and focus on what's important.",
       "heroButton": "Submit a request"
     },
-      "ServicesSection": {
-        "title": "Our Services",
-        "subTitle": "We offer a full range of services for legalizing and employing foreigners in Poland, with an individual approach to each client.",
-        "cards": [
-          {
-            "id": "karta-pobytu",
-            "heading": "Residence Card",
-            "subHeading": "Karta Pobytu",
-            "content": "Comprehensive handling of all types of residence cards: temporary stay (Czasowy), permanent stay (Stały), EU Blue Card (Blue Card), and EU resident card. Grounds: work, study, family reunification, marriage to a Polish citizen, business, and more.",
-            "list": [
-              "Temporary stay (Czasowy)",
-              "Permanent stay (Stały)",
-              "EU Blue Card",
-              "EU resident card",
-              "Residence card for work",
-              "Residence card for study",
-              "Card for family reunification",
-              "Card for other circumstances",
-              "Permanent residence card",
-              "EU citizen registration",
-              "Polish citizenship"
-            ]
-          },
-          {
-            "id": "business",
-            "heading": "Starting and Managing a Business",
-            "subHeading": "Założenie i prowadzenie firmy",
-            "content": "Assistance in setting up a company (JDG, Sp. z o.o.), consultations on legalization through business, and managing business activities in Poland. Full support at all stages.",
-            "list": [
-              "Assistance in setting up a company (JDG, Sp. z o.o.)",
-              "Consultations on legalization through business",
-              "Advice on managing business activities in Poland",
-              "Full support at all stages of your business development"
-            ]
-          },
-          {
-            "id": "citizenship",
-            "heading": "Polish Citizenship",
-            "subHeading": "Obywatelstwo polskie",
-            "content": "Assistance in obtaining Polish citizenship. We guide you through all stages of the process, ensuring the most effective path to acquiring citizenship.",
-            "list": [
-              "Assessment of your chances of obtaining citizenship",
-              "Obtaining citizenship through the Voivode",
-              "Obtaining citizenship through the President"
-            ]
-          },
-          {
-            "id": "marriage",
-            "heading": "Marriage and Family Matters",
-            "subHeading": "Małżeństwo i sprawy rodzinne",
-            "content": "Assistance in registering marriages in Poland, legalization based on marriage or cohabitation with a Polish citizen, and family reunification.",
-            "list": [
-              "Marriage registration in Poland",
-              "Legalization based on marriage with a Polish citizen",
-              "Legalization based on cohabitation with a Polish citizen",
-              "Assistance with family reunification"
-            ]
-          },
-          {
-            "id": "documents",
-            "heading": "Documents and Registrations",
-            "subHeading": "Dokumenty i rejestracje",
-            "content": "Assistance in obtaining various documents: PIT-37 tax return, vehicle registration, driver's license exchange. Assistance in obtaining 800+ or RKO 1000+ benefits.",
-            "list": [
-              "PIT-37 tax return preparation and submission",
-              "Vehicle registration",
-              "Driver's license exchange to Polish",
-              "Assistance in obtaining 800+ or RKO 1000+ benefits",
-              "Other types of registrations and document handling"
-            ]
-          },
-          {
-            "id": "consultation",
-            "heading": "Consultation",
-            "subHeading": "Konsultacja",
-            "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly analyze your situation and provide the best solutions."
-          },
-          {
-            "id": "for-employers",
-            "heading": "Services for Employers",
-            "subHeading": "Usługi dla pracodawców",
-            "content": "For employers, we offer comprehensive and professional services for those who are just starting to employ foreigners in their company, as well as for those who want to extend the stay and employment of their current employees.",
-            "list": [
-              "Registration of a declaration to employ a foreigner and notification to the labor office",
-              "Obtaining a work permit",
-              "Obtaining a residence and work permit",
-              "Annex No. 1 to the temporary residence and work permit",
-              "Obtaining information from the county office on the lack of labor market availability",
-              "Legal representation before authorities",
-              "Assistance in verifying and determining the current status of a foreigner",
-              "Consultations on choosing a method of work legalization",
-              "Preparation and completion of all forms",
-              "Receiving correspondence and meeting deadlines"
-            ]
-          }
-        ]
-      },    
+    "ServicesSection": {
+      "title": "Our Services",
+      "subTitle": "We offer a full range of services for legalizing and employing foreigners in Poland, with an individual approach to each client.",
+      "cards": [
+        {
+          "id": "karta-pobytu",
+          "heading": "Residence Card",
+          "subHeading": "Karta Pobytu",
+          "content": "Comprehensive handling of all types of residence cards: temporary stay (Czasowy), permanent stay (Stały), EU Blue Card (Blue Card), and EU resident card. Grounds: work, study, family reunification, marriage to a Polish citizen, business, and more.",
+          "list": [
+            "Temporary stay (Czasowy)",
+            "Permanent stay (Stały)",
+            "EU Blue Card",
+            "EU resident card",
+            "Residence card for work",
+            "Residence card for study",
+            "Card for family reunification",
+            "Card for other circumstances",
+            "Permanent residence card",
+            "EU citizen registration",
+            "Polish citizenship"
+          ]
+        },
+        {
+          "id": "business",
+          "heading": "Starting and Managing a Business",
+          "subHeading": "Założenie i prowadzenie firmy",
+          "content": "Assistance in setting up a company (JDG, Sp. z o.o.), consultations on legalization through business, and managing business activities in Poland. Full support at all stages.",
+          "list": [
+            "Assistance in setting up a company (JDG, Sp. z o.o.)",
+            "Consultations on legalization through business",
+            "Advice on managing business activities in Poland",
+            "Full support at all stages of your business development"
+          ]
+        },
+        {
+          "id": "citizenship",
+          "heading": "Polish Citizenship",
+          "subHeading": "Obywatelstwo polskie",
+          "content": "Assistance in obtaining Polish citizenship. We guide you through all stages of the process, ensuring the most effective path to acquiring citizenship.",
+          "list": [
+            "Assessment of your chances of obtaining citizenship",
+            "Obtaining citizenship through the Voivode",
+            "Obtaining citizenship through the President"
+          ]
+        },
+        {
+          "id": "marriage",
+          "heading": "Marriage and Family Matters",
+          "subHeading": "Małżeństwo i sprawy rodzinne",
+          "content": "Assistance in registering marriages in Poland, legalization based on marriage or cohabitation with a Polish citizen, and family reunification.",
+          "list": [
+            "Marriage registration in Poland",
+            "Legalization based on marriage with a Polish citizen",
+            "Legalization based on cohabitation with a Polish citizen",
+            "Assistance with family reunification"
+          ]
+        },
+        {
+          "id": "documents",
+          "heading": "Documents and Registrations",
+          "subHeading": "Dokumenty i rejestracje",
+          "content": "Assistance in obtaining various documents: PIT-37 tax return, vehicle registration, driver's license exchange. Assistance in obtaining 800+ or RKO 1000+ benefits.",
+          "list": [
+            "PIT-37 tax return preparation and submission",
+            "Vehicle registration",
+            "Driver's license exchange to Polish",
+            "Assistance in obtaining 800+ or RKO 1000+ benefits",
+            "Other types of registrations and document handling"
+          ]
+        },
+        {
+          "id": "consultation",
+          "heading": "Consultation",
+          "subHeading": "Konsultacja",
+          "content": "We offer individual consultations to discuss all issues related to legalization and immigration. We thoroughly analyze your situation and provide the best solutions."
+        },
+        {
+          "id": "for-employers",
+          "heading": "Services for Employers",
+          "subHeading": "Usługi dla pracodawców",
+          "content": "For employers, we offer comprehensive and professional services for those who are just starting to employ foreigners in their company, as well as for those who want to extend the stay and employment of their current employees.",
+          "list": [
+            "Registration of a declaration to employ a foreigner and notification to the labor office",
+            "Obtaining a work permit",
+            "Obtaining a residence and work permit",
+            "Annex No. 1 to the temporary residence and work permit",
+            "Obtaining information from the county office on the lack of labor market availability",
+            "Legal representation before authorities",
+            "Assistance in verifying and determining the current status of a foreigner",
+            "Consultations on choosing a method of work legalization",
+            "Preparation and completion of all forms",
+            "Receiving correspondence and meeting deadlines"
+          ]
+        }
+      ]
+    },
     "AboutUsSection": {
       "firstImageAlt": "photo of our team",
       "secondImageAlt": "photo of the company founder",
