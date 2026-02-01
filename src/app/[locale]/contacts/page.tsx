@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 
 import { ContactForm } from "@/components/ContactForm"
 import { Logo } from '@/components/Logo'
-import { Map } from "@/components/Map"
+import { Map } from "@/src/app/[locale]/contacts/_components/Map"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card"
 

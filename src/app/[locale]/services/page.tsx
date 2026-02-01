@@ -1,7 +1,7 @@
 import { StarIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 
-import { ScrollableContentWithTOC } from "@/components/ScrollableContentWithTOC"
+import { ScrollableContentWithTOC } from "@/src/app/[locale]/services/_components/ScrollableContentWithTOC"
 import { ListOfServices } from '@/components/ui/listOfServices'
 import {
 	Accordion,

@@ -22,7 +22,7 @@ import Hero from '@/public/img/hero.webp'
 import About from './about/page'
 import Contacts from './contacts/page'
 import Services from './services/page'
-import { Testimonials } from './Testimonials'
+import { Testimonials } from './_components/Testimonials'
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')

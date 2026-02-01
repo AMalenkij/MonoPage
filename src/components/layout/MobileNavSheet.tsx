@@ -5,7 +5,7 @@ import { SocialLinks } from './SocialLinks';
 import { NavBar } from './NavBar';
 import { cn } from "@/src/lib/utils";
 import { Logo } from "../Logo";
-import { ClientSheet } from "../ClientSheet";
+import { ClientSheet } from "./ClientSheet";
 
 interface MobileNavSheetProps {
   tModeToggle: {
