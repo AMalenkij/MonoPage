@@ -54,7 +54,7 @@ interface FormValues {
   privacyConsent: boolean;
 }
 
-const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ contactTranslations }) => {
+export function ContactForm({ contactTranslations }: { contactTranslations: ContactTranslations }) {
   const locale = useLocale()
   const { toast } = useToast()
   const formSchema = z.object({
@@ -209,5 +209,3 @@ const ContactForm: React.FC<{ contactTranslations: ContactTranslations }> = ({ c
     </Form>
   );
 };
-
-export default ContactForm;

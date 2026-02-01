@@ -14,7 +14,7 @@ interface ProfileHighlightsProps {
   tOutOf: string
 }
 
-export default function ProfileHighlights({ yearsOfExperience, rating, className, tYears, tExperience, tRating, tOutOf }: ProfileHighlightsProps) {
+export function ProfileHighlights({ yearsOfExperience, rating, className, tYears, tExperience, tRating, tOutOf }: ProfileHighlightsProps) {
   const stars = Array.from({ length: 5 }, (_, index) => (
     <Star
       key={index}

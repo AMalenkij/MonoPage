@@ -13,7 +13,7 @@ interface HighlightsProps {
   className?: string;
 }
 
-const Highlights: React.FC<HighlightsProps> = ({ rating, className }) => {
+function Highlights({ rating, className }: HighlightsProps) {
   const t = useTranslations('Testimonials');
 
   return (
@@ -33,20 +33,22 @@ const Highlights: React.FC<HighlightsProps> = ({ rating, className }) => {
       </div>
     </div>
   );
-};
+}
 
-const TestimonialCard: React.FC<{ name: string; text: string }> = ({ name, text }) => (
-  <Card className="w-full text-left mx-auto bg-background">
-    <CardHeader className="flex flex-row items-center">
-      <CardTitle>{name}</CardTitle>
-    </CardHeader>
-    <CardContent className='text-lg font-light'>
-      {text}
-    </CardContent>
-  </Card>
-);
+function TestimonialCard({ name, text }: { name: string; text: string }) {
+  return (
+    <Card className="w-full text-left mx-auto bg-background">
+      <CardHeader className="flex flex-row items-center">
+        <CardTitle>{name}</CardTitle>
+      </CardHeader>
+      <CardContent className='text-lg font-light'>
+        {text}
+      </CardContent>
+    </Card>
+  );
+}
 
-const Testimonials: React.FC = () => {
+export function Testimonials() {
   const t = useTranslations('Testimonials');
 
   const reviews = [
@@ -80,6 +82,4 @@ const Testimonials: React.FC = () => {
       </section>
     </div>
   );
-};
-
-export default Testimonials;
+}

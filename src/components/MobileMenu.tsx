@@ -1,11 +1,11 @@
-import ModeToggle from "./ModeToggle";
-import LanguageToggle from './LanguageToggle';
+import { ModeToggle } from "./ModeToggle";
+import { LanguageToggle } from './LanguageToggle';
 import { Accordion } from "@/components/ui/accordion";
 import { SocialLinks } from './SocialLinks';
-import NavMenu from './NavMenu';
+import { NavMenu } from './NavMenu';
 import { cn } from "@/src/lib/utils";
-import Logo from "./Logo";
-import ClientSheet from "./ClientSheet";
+import { Logo } from "./Logo";
+import { ClientSheet } from "./ClientSheet";
 
 interface MobileMenuProps {
   tModeToggle: {
@@ -24,7 +24,7 @@ interface MobileMenuProps {
   className?: string;
 }
 
-export default function MobileMenu({
+export function MobileMenu({
   tModeToggle,
   tLanguageToggle,
   className,

@@ -5,18 +5,20 @@ import { getMessages } from 'next-intl/server'
 import Head from 'next/head'
 
 import "./globals.css";
-import Header from '@/components/NavHeader'
-import Footer from "@/components/Footer"
-import ThemeProvider from '@/providers/ThemeProvider'
+import { NavHeader } from '@/components/NavHeader'
+import { Footer } from "@/components/Footer"
+import { ThemeProvider } from '@/providers/ThemeProvider'
+import { LenisProvider } from '@/providers/LenisProvider'
 import type { Metadata } from "next"
-import StickyScrollToTopButton from '@/components/StickyScrollToTopButton'
+import { StickyScrollToTopButton } from '@/components/StickyScrollToTopButton'
 import { Toaster } from "@/components/ui/toaster"
 
 
 const raleway = Raleway({ subsets: ["cyrillic"] });
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations('Metadata');
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
   return {
     title: t('title'),
     description: t('description'),
@@ -26,11 +28,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params;
   const messages = await getMessages()
   const tStickyScrollToTopButton = await getTranslations('Components.StickyScrollToTopButton')
 
@@ -50,7 +53,7 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
-            <Header />
+            <NavHeader />
             {children}
             <Toaster />
             <Footer />

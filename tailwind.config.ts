@@ -1,13 +1,13 @@
 import type { Config } from "tailwindcss"
 
 const config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -27,8 +27,8 @@ const config = {
           secondary: "hsl(var(--background-secondary))",
         },
         foreground: {
-          DEFAULT:"hsl(var(--foreground))",
-          secondary:"hsl(var(--foreground-secondary))",
+          DEFAULT: "hsl(var(--foreground))",
+          secondary: "hsl(var(--foreground-secondary))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

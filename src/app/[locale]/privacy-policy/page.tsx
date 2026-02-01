@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-const PrivacyPolicy = () => {
+export default function PrivacyPolicy() {
   const t = useTranslations('PrivacyPolicy');
 
   return (
@@ -43,6 +43,4 @@ const PrivacyPolicy = () => {
       </div>
     </main>
   );
-};
-
-export default PrivacyPolicy;
+}

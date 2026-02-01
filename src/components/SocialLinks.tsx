@@ -9,7 +9,7 @@ interface SocialLinksProps {
   className?: string;
 }
 
-export const SocialLinks: React.FC<SocialLinksProps> = ({ variant, className }) => {
+export function SocialLinks({ variant, className }: SocialLinksProps) {
   const isSidebar = variant === 'sidebar';
 
   return (

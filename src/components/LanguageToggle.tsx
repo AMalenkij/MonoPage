@@ -25,7 +25,7 @@ interface LanguageToggleProps {
   changeLanguageLabel: string
 }
 
-export default function LanguageToggle({
+export function LanguageToggle({
   variant,
   englishLabel,
   polishLabel,

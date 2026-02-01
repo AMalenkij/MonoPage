@@ -16,7 +16,7 @@ const containerStyle = {
   height: '60vh',
 };
 
-function Map({ location, children }: MapProps) {
+export const Map = memo(function Map({ location, children }: MapProps) {
   const [isOpen, setIsOpen] = useState(true);
 
   const handleMarkerClick = () => {
@@ -39,6 +39,4 @@ function Map({ location, children }: MapProps) {
       </GoogleMap>
     </LoadScript>
   );
-}
-
-export default memo(Map);
+});

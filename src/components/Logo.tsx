@@ -11,7 +11,7 @@ interface LogoProps {
   className?: string;
 }
 
-export default function Logo({ variant, className }: LogoProps) {
+export function Logo({ variant, className }: LogoProps) {
   const t = useTranslations('Components.Nav')
   const baseClasses = "flex items-center gap-x-2";
 

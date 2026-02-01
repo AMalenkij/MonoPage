@@ -43,7 +43,7 @@ interface NavMenuProps {
   className?: string;
 }
 
-export default function NavMenu({ variant, className }: NavMenuProps) {
+export function NavMenu({ variant, className }: NavMenuProps) {
   const tNavMenu = useTranslations('Components.Nav');
   const pathName = usePathname();
   const { locale } = useParams();

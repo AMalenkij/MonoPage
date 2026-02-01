@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl';
 
 import { SocialLinks } from '@/components/SocialLinks'
-import NavMenu from '@/components/NavMenu'
-import Logo from './Logo';
+import { NavMenu } from '@/components/NavMenu'
+import { Logo } from './Logo';
 
-export default function Footer() {
+export function Footer() {
   const tFooter = useTranslations('HomePage.FooterSection');
 
   return (

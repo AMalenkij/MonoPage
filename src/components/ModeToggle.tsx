@@ -24,7 +24,7 @@ interface ModeToggleProps {
   toggleTheme: string
 }
 
-export default function ModeToggle({
+export function ModeToggle({
   variant,
   lightLabel,
   darkLabel,
@@ -33,9 +33,9 @@ export default function ModeToggle({
 }: ModeToggleProps) {
   const { setTheme } = useTheme()
 
-    if (variant === 'dropdown') {
-      return (
-        <DropdownMenu>
+  if (variant === 'dropdown') {
+    return (
+      <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
             <SunIcon className="h-5 w-5  dark:-rotate-90 dark:scale-0" />
@@ -55,22 +55,22 @@ export default function ModeToggle({
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      )
-    }
+    )
+  }
 
-    if (variant === 'accordion') {
-      return (
-        <AccordionItem value="theme">
-              <AccordionTrigger>{toggleTheme}</AccordionTrigger>
+  if (variant === 'accordion') {
+    return (
+      <AccordionItem value="theme">
+        <AccordionTrigger>{toggleTheme}</AccordionTrigger>
         <AccordionContent>
-        <ul className="space-y-2 flex flex-col items-start">
-        <Button variant="link"><li onClick={() => setTheme("light")}>{lightLabel}</li></Button>
-        <Button variant="link"><li onClick={() => setTheme("dark")}>{darkLabel}</li></Button>
-        <Button variant="link"><li onClick={() => setTheme("system")}>{systemLabel}</li></Button>
-        </ul>
-      </AccordionContent>
-    </AccordionItem>
-      )
-    }
+          <ul className="space-y-2 flex flex-col items-start">
+            <Button variant="link"><li onClick={() => setTheme("light")}>{lightLabel}</li></Button>
+            <Button variant="link"><li onClick={() => setTheme("dark")}>{darkLabel}</li></Button>
+            <Button variant="link"><li onClick={() => setTheme("system")}>{systemLabel}</li></Button>
+          </ul>
+        </AccordionContent>
+      </AccordionItem>
+    )
+  }
 
 }

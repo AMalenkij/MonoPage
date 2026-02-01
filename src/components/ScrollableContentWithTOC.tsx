@@ -3,7 +3,7 @@
 import React, { useRef, useEffect, useState, useCallback, } from 'react';
 import { useInView } from 'framer-motion';
 
-import ListOfServices from '@/components/ui/listOfServices'
+import { ListOfServices } from '@/components/ui/listOfServices'
 import { Button } from "@/components/ui/button"
 
 interface Section {
@@ -18,7 +18,7 @@ interface ScrollableContentWithTOCProps {
   sections: Section[];
 }
 
-const ScrollableContentWithTOC: React.FC<ScrollableContentWithTOCProps> = ({ sections }) => {
+export function ScrollableContentWithTOC({ sections }: ScrollableContentWithTOCProps) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
@@ -47,7 +47,7 @@ const ScrollableContentWithTOC: React.FC<ScrollableContentWithTOCProps> = ({ sec
       />
     </div>
   );
-};
+}
 
 const TableOfContents: React.FC<{
   sections: Section[];
@@ -135,5 +135,3 @@ const SectionContent: React.FC<{
 });
 
 SectionContent.displayName = 'SectionContent';
-
-export default ScrollableContentWithTOC;

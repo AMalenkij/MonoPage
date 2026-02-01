@@ -2,8 +2,8 @@ import { ArrowTopRightIcon, StarIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 import Image from "next/image"
 
-import ContactForm from "@/components/ContactForm"
-import ProfileHighlights from "@/components/ProfileHighlights"
+import { ContactForm } from "@/components/ContactForm"
+import { ProfileHighlights } from "@/components/ProfileHighlights"
 import { TextEffect } from '@/components/core/TextEffect'
 import { Button } from "@/components/ui/button"
 import {
@@ -14,7 +14,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import LenisProvider from '@/src/providers/LenisProvider'
+import { LenisProvider } from '@/src/providers/LenisProvider'
 import { BackgroundCircle } from '@/public/svg/BackgroundCircle'
 import { CirclePattern } from '@/public/svg/CirclePattern'
 
@@ -22,7 +22,7 @@ import Hero from '@/public/img/hero.webp'
 import About from './about/page'
 import Contacts from './contacts/page'
 import Services from './services/page'
-import Testimonials from './Testimonials'
+import { Testimonials } from './Testimonials'
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroSection')

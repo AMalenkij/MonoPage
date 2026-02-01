@@ -6,7 +6,7 @@ interface SectionContentProps {
   list?: string[];
 }
 
-const ListOfServices: React.FC<SectionContentProps> = ({ content, list }) => {
+export function ListOfServices({ content, list }: SectionContentProps) {
   return (
     <div>
       <p className='pb-4'>{content}</p>
@@ -25,6 +25,4 @@ const ListOfServices: React.FC<SectionContentProps> = ({ content, list }) => {
       )}
     </div>
   );
-};
-
-export default ListOfServices;
+}

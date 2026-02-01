@@ -5,7 +5,7 @@ import { ArrowUpIcon } from "@radix-ui/react-icons";
 
 import { Button } from "@/components/ui/button";
 
-const StickyScrollToTopButton = ({StickyScrollToTopButton} : {StickyScrollToTopButton: string}) => {
+export function StickyScrollToTopButton({ StickyScrollToTopButton }: { StickyScrollToTopButton: string }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -29,14 +29,12 @@ const StickyScrollToTopButton = ({StickyScrollToTopButton} : {StickyScrollToTopB
           className="flex flex-col gap-2 h-full "
           onClick={scrollToTop}
           aria-label={StickyScrollToTopButton}
-			    variant='link'
+          variant='link'
         >
           <ArrowUpIcon className="h-6 w-6" />
-          <span className="vertical-lr">{StickyScrollToTopButton}</span>      
-			</Button>
+          <span className="vertical-lr">{StickyScrollToTopButton}</span>
+        </Button>
       )}
     </div>
   );
-};
-
-export default StickyScrollToTopButton;
+}

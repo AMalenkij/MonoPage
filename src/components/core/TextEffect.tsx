@@ -104,7 +104,7 @@ const AnimationComponent: React.FC<{
   variants: Variants;
   per: 'line' | 'word' | 'char';
   segmentWrapperClassName?: string;
-}> = React.memo(({ segment, variants, per, segmentWrapperClassName }) => {
+}> = React.memo(function AnimationComponent({ segment, variants, per, segmentWrapperClassName }) {
   const content =
     per === 'line' ? (
       <motion.span variants={variants} className='block'>

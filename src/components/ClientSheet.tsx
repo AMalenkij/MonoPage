@@ -15,7 +15,7 @@ interface ClientSheetProps {
   nameBtn: string;
 }
 
-export default function ClientSheet({ children, className, title, nameBtn }: ClientSheetProps) {
+export function ClientSheet({ children, className, title, nameBtn }: ClientSheetProps) {
   const [open, setOpen] = React.useState(false);
   const pathName = usePathname();
 

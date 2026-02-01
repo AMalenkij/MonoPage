@@ -1,12 +1,12 @@
 import { useTranslations } from 'next-intl'
 
-import ModeToggle from "./ModeToggle"
-import LanguageToggle from './LanguageToggle'
-import NavMenu from './NavMenu'
-import MobileMenu from './MobileMenu';
-import Logo from './Logo';
+import { ModeToggle } from "./ModeToggle"
+import { LanguageToggle } from './LanguageToggle'
+import { NavMenu } from './NavMenu'
+import { MobileMenu } from './MobileMenu';
+import { Logo } from './Logo';
 
-export default function Header() {
+export function NavHeader() {
   const tModeToggle = useTranslations('Header.ModeToggle')
   const tLanguageToggle = useTranslations('Header.LanguageToggle')
 

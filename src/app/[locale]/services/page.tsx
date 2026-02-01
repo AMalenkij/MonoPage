@@ -1,8 +1,8 @@
 import { StarIcon } from "@radix-ui/react-icons"
 import { useTranslations } from 'next-intl'
 
-import ScrollableContentWithTOC from "@/components/ScrollableContentWithTOC"
-import ListOfServices from '@/components/ui/listOfServices'
+import { ScrollableContentWithTOC } from "@/components/ScrollableContentWithTOC"
+import { ListOfServices } from '@/components/ui/listOfServices'
 import {
 	Accordion,
 	AccordionContent,
@@ -67,7 +67,7 @@ export default function Services() {
 	);
 }
 
-const StarField: React.FC = () => {
+function StarField() {
 	const stars = [
 		{ size: 12, left: '25%', top: '10%' },   // Меньше
 		{ size: 40, left: '40%', top: '15%' },   // Больше
@@ -97,6 +97,6 @@ const StarField: React.FC = () => {
 			))}
 		</div>
 	);
-};
+}
 
 
