@@ -1,5 +1,5 @@
-import { ModeToggle } from "../ModeToggle";
-import { LanguageToggle } from '../LanguageToggle';
+import { ModeToggle } from "./ModeToggle";
+import { LanguageToggle } from './LanguageToggle';
 import { Accordion } from "@/components/ui/accordion";
 import { SocialLinks } from './SocialLinks';
 import { NavBar } from './NavBar';

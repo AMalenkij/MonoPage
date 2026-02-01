@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 
-import { ModeToggle } from "../ModeToggle"
-import { LanguageToggle } from '../LanguageToggle'
+import { ModeToggle } from "./ModeToggle"
+import { LanguageToggle } from './LanguageToggle'
 import { NavBar } from './NavBar'
 import { MobileNavSheet } from './MobileNavSheet';
 import { Logo } from '../Logo';

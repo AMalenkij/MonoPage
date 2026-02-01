@@ -8,9 +8,8 @@ import "./globals.css";
 import { Header } from '@/components/layout/Header'
 import { Footer } from "@/components/layout/Footer"
 import { ThemeProvider } from '@/providers/ThemeProvider'
-import { LenisProvider } from '@/providers/LenisProvider'
 import type { Metadata } from "next"
-import { StickyScrollToTopButton } from '@/components/StickyScrollToTopButton'
+import { StickyScrollToTopButton } from '@/components/layout/StickyScrollToTopButton'
 import { Toaster } from "@/components/ui/toaster"
 
 
