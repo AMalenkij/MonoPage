@@ -1,19 +1,19 @@
 import { useTranslations } from 'next-intl'
 
-import { ModeToggle } from "./ModeToggle"
-import { LanguageToggle } from './LanguageToggle'
-import { NavMenu } from './NavMenu'
-import { MobileMenu } from './MobileMenu';
-import { Logo } from './Logo';
+import { ModeToggle } from "../ModeToggle"
+import { LanguageToggle } from '../LanguageToggle'
+import { NavBar } from './NavBar'
+import { MobileNavSheet } from './MobileNavSheet';
+import { Logo } from '../Logo';
 
-export function NavHeader() {
+export function Header() {
   const tModeToggle = useTranslations('Header.ModeToggle')
   const tLanguageToggle = useTranslations('Header.LanguageToggle')
 
   return (
     <header className="flex container mx-auto justify-between items-center my-6 text-foreground-secondary">
       <Logo variant="header" />
-      <MobileMenu
+      <MobileNavSheet
         className="flex md:hidden"
         tModeToggle={{
           lightLabel: tModeToggle('lightLabel'),
@@ -30,7 +30,7 @@ export function NavHeader() {
         }}
       />
       <nav className="items-center space-x-2 hidden md:flex">
-        <NavMenu variant='header' />
+        <NavBar variant='header' />
         <div className="flex items-center border-l border-foreground-secondary pl-4 space-x-2">
           <ModeToggle
             variant="dropdown"

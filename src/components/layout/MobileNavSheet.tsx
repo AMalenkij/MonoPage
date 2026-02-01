@@ -1,13 +1,13 @@
-import { ModeToggle } from "./ModeToggle";
-import { LanguageToggle } from './LanguageToggle';
+import { ModeToggle } from "../ModeToggle";
+import { LanguageToggle } from '../LanguageToggle';
 import { Accordion } from "@/components/ui/accordion";
 import { SocialLinks } from './SocialLinks';
-import { NavMenu } from './NavMenu';
+import { NavBar } from './NavBar';
 import { cn } from "@/src/lib/utils";
-import { Logo } from "./Logo";
-import { ClientSheet } from "./ClientSheet";
+import { Logo } from "../Logo";
+import { ClientSheet } from "../ClientSheet";
 
-interface MobileMenuProps {
+interface MobileNavSheetProps {
   tModeToggle: {
     lightLabel: string;
     darkLabel: string;
@@ -24,11 +24,11 @@ interface MobileMenuProps {
   className?: string;
 }
 
-export function MobileMenu({
+export function MobileNavSheet({
   tModeToggle,
   tLanguageToggle,
   className,
-}: MobileMenuProps) {
+}: MobileNavSheetProps) {
   return (
     <ClientSheet
       className={cn("md:hidden", className)}
@@ -54,7 +54,7 @@ export function MobileMenu({
             toggleTheme={tModeToggle.toggleTheme}
           />
         </Accordion>
-        <NavMenu variant='default' className='flex flex-col items-start' />
+        <NavBar variant='default' className='flex flex-col items-start' />
       </nav>
       <SocialLinks
         variant="sidebar"

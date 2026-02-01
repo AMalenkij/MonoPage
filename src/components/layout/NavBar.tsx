@@ -38,12 +38,12 @@ NavLink.displayName = 'NavLink';
 
 type RouteVariant = 'header' | 'footer' | 'default';
 
-interface NavMenuProps {
+interface NavBarProps {
   variant: RouteVariant;
   className?: string;
 }
 
-export function NavMenu({ variant, className }: NavMenuProps) {
+export function NavBar({ variant, className }: NavBarProps) {
   const tNavMenu = useTranslations('Components.Nav');
   const pathName = usePathname();
   const { locale } = useParams();

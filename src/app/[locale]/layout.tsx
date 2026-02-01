@@ -5,8 +5,8 @@ import { getMessages } from 'next-intl/server'
 import Head from 'next/head'
 
 import "./globals.css";
-import { NavHeader } from '@/components/NavHeader'
-import { Footer } from "@/components/Footer"
+import { Header } from '@/components/layout/Header'
+import { Footer } from "@/components/layout/Footer"
 import { ThemeProvider } from '@/providers/ThemeProvider'
 import { LenisProvider } from '@/providers/LenisProvider'
 import type { Metadata } from "next"
@@ -53,7 +53,7 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
-            <NavHeader />
+            <Header />
             {children}
             <Toaster />
             <Footer />

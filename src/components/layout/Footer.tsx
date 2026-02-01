@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import { SocialLinks } from '@/components/SocialLinks'
-import { NavMenu } from '@/components/NavMenu'
-import { Logo } from './Logo';
+import { SocialLinks } from './SocialLinks'
+import { NavBar } from './NavBar'
+import { Logo } from '../Logo';
 
 export function Footer() {
   const tFooter = useTranslations('HomePage.FooterSection');
@@ -34,7 +34,7 @@ export function Footer() {
           {/* Navigation Links */}
           <div className="flex flex-col text-start">
             <h4 className="text-lg font-bold ">{tFooter('linksTitle')}</h4>
-            <NavMenu variant="footer" className="flex flex-col items-start" />
+            <NavBar variant="footer" className="flex flex-col items-start" />
           </div>
 
           {/* Social Media */}

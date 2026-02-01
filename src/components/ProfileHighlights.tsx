@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-import { SocialLinks } from './SocialLinks';
+import { SocialLinks } from './layout/SocialLinks';
 import { cn } from "@/src/lib/utils"
 
 interface ProfileHighlightsProps {
