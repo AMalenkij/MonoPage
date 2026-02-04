@@ -1,5 +1,5 @@
 import { StarFilledIcon } from "@radix-ui/react-icons"
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from "next/image"
 
 import { InView } from '@/components/core/InView'
@@ -7,8 +7,10 @@ import aboutImg from '@/public/img/about.webp'
 import aboutImg2 from '@/public/img/about2.webp'
 import { CirclePattern } from '@/public/svg/CirclePattern'
 
-export default function About() {
-  const tAbout = useTranslations('HomePage.AboutUsSection')
+export default async function About({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const tAbout = await getTranslations('HomePage.AboutUsSection')
 
   return (
     <>

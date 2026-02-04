@@ -1,7 +1,9 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export default function PrivacyPolicy() {
-  const t = useTranslations('PrivacyPolicy');
+export default async function PrivacyPolicy({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('PrivacyPolicy');
 
   return (
     <main className="container mx-auto px-4 py-8">

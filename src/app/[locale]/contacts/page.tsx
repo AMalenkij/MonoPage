@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { ContactForm } from "@/components/ContactForm"
 import { Logo } from '@/components/Logo'
@@ -11,9 +11,11 @@ import { LINK_TO_MAP } from '@/constants/links'
 import { COMPANY_NAME_FULL, LOCATION_IN_MAP } from '@/constants/setting'
 
 
-export default function Contacts() {
-  const tContacts = useTranslations('HomePage.ContactsSection')
-  const tFooter = useTranslations('HomePage.FooterSection');
+export default async function Contacts({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const tContacts = await getTranslations('HomePage.ContactsSection')
+  const tFooter = await getTranslations('HomePage.FooterSection');
 
   const contactTranslations = {
     privacyError: tContacts('privacyError'),

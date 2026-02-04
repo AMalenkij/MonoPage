@@ -1,5 +1,5 @@
 import { StarIcon } from "@radix-ui/react-icons"
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { ScrollableContentWithTOC } from "@/src/app/[locale]/services/_components/ScrollableContentWithTOC"
 import { ListOfServices } from '@/components/ui/listOfServices'
@@ -26,8 +26,10 @@ interface Section {
 	list: string[];
 }
 
-export default function Services() {
-	const t = useTranslations('HomePage.ServicesSection');
+export default async function Services({ params }: { params: Promise<{ locale: string }> }) {
+	const { locale } = await params;
+	setRequestLocale(locale);
+	const t = await getTranslations('HomePage.ServicesSection');
 	const sections: Section[] = (t.raw('cards') as CardData[]).map((card: CardData) => ({
 		id: card.id,
 		title: card.heading,

@@ -1,5 +1,5 @@
 import { ArrowTopRightIcon, StarIcon } from "@radix-ui/react-icons"
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from "next/image"
 
 import { ContactForm } from "@/components/ContactForm"
@@ -24,10 +24,12 @@ import Contacts from './contacts/page'
 import Services from './services/page'
 import { Testimonials } from './_components/Testimonials'
 
-export default function Home() {
-  const tHero = useTranslations('HomePage.HeroSection')
-  const tAbout = useTranslations('HomePage.AboutUsSection')
-  const tContacts = useTranslations('HomePage.ContactsSection')
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const tHero = await getTranslations('HomePage.HeroSection')
+  const tAbout = await getTranslations('HomePage.AboutUsSection')
+  const tContacts = await getTranslations('HomePage.ContactsSection')
   const contactTranslations = {
     privacyError: tContacts('privacyError'),
     nameLabel: tContacts('nameLabel'),
@@ -104,13 +106,13 @@ export default function Home() {
         </div>
       </div>
       {/* Services Section */}
-      <Services />
+      <Services params={params} />
       {/* About Section */}
-      <About />
+      <About params={params} />
       {/* Feedback */}
       <Testimonials />
       {/* Contacts Section */}
-      <Contacts />
+      <Contacts params={params} />
     </LenisProvider>
   );
 }

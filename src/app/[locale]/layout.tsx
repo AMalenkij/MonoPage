@@ -1,7 +1,7 @@
 import { Raleway } from "next/font/google"
 import { NextIntlClientProvider } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import { getMessages } from 'next-intl/server'
+import { getMessages, setRequestLocale } from 'next-intl/server'
 import Head from 'next/head'
 
 import "./globals.css";
@@ -11,9 +11,13 @@ import { ThemeProvider } from '@/providers/ThemeProvider'
 import type { Metadata } from "next"
 import { StickyScrollToTopButton } from '@/components/layout/StickyScrollToTopButton'
 import { Toaster } from "@/components/ui/toaster"
+import { routing } from "@/i18n/routing";
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
-const raleway = Raleway({ subsets: ["cyrillic"] });
+const raleway = Raleway({ subsets: ["cyrillic", "latin"] });
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -33,6 +37,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages()
   const tStickyScrollToTopButton = await getTranslations('Components.StickyScrollToTopButton')
 
@@ -40,6 +45,7 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
