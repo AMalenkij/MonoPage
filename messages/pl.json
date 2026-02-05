@@ -4,6 +4,10 @@
     "description": "LegalFox - pomoc dla cudzoziemców w Polsce w uzyskaniu Karty Pobytu (Blue Card, czasowy i stały pobyt, karta rezydenta UE), obywatelstwa polskiego, rejestracji firm (JDG, Sp. z o.o.), a także konsultacje w zakresie legalizacji, załatwiania dokumentów, rejestracji samochodów, wymiany prawa jazdy, obliczeń PIT-37 i innych usług.",
     "keywords": "Legalizacja w Polsce, Karta Pobytu, Blue Card, Pobyt stały, Karta rezydenta UE, rejestracja firmy w Polsce, obywatelstwo polskie, dokumenty w Polsce, pomoc cudzoziemcom, LegalFox"
   },
+  "Site": {
+    "slogan": "Ekspert w dziedzinie legalizacji i zatrudnienia cudzoziemców.",
+    "description": "Kompleksowe rozwiązania legalizacyjne w Polsce dla osób prywatnych i firm."
+  },
   "Header": {
     "MobileMenu": {
       "MobileMenu": "Menu mobilne",
