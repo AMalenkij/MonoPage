@@ -91,8 +91,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
         {/* <HeroImage /> */}
         <div className="relative overflow-hidden px-12 md:px-20 md:pt-24 max-h-[93vh]">
-          <StarIcon className="absolute top-[24%] left-[6%] sm:h-6 sm:w-6 h-5 w-5 fill-primary" />
-          <StarIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-6 sm:w-24 h-5 w-5 " />
+          <StarIcon className="absolute top-[24%] left-[6%] sm:h-8 sm:w-8 h-5 w-5 fill-primary" />
+          <StarIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-8 sm:w-8 h-5 w-5 " />
           <CirclePattern className='h-34 w-24 md:h-44 md:w-32 absolute left-0 bottom-[3%] -z-10' />
           <BackgroundCircle className='absolute -bottom-1/3 -right-0 w-full h-full -z-20 fill-secondary' />
           <ProfileHighlights

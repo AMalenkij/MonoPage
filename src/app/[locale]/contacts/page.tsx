@@ -68,7 +68,7 @@ export default async function Contacts({ params }: { params: Promise<{ locale: s
       <section className="bg-background pb-28">
         <header className="text-center pt-16 md:pt-20 lg:pt-28 ">
           <h1 className="text-3xl xl:text-4xl font-semibold mb-8">{tContacts('title')}</h1>
-          <p className="xl:text-xl text-lg font-light  mb-24">{tContacts('subTitle')}</p>
+          <p className="xl:text-xl text-lg font-light mb-24">{tContacts('subTitle')}</p>
         </header>
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-y-4 lg:gap-x-4">
           <article className="lg:w-1/2 w-full h-full">
@@ -83,11 +83,11 @@ export default async function Contacts({ params }: { params: Promise<{ locale: s
           </article>
           <aside className="lg:w-1/2 w-full h-full shadow-sm">
             <Map location={LOCATION_IN_MAP}>
-              <div className='text-muted-foreground flex flex-col gap-y-2 text-center items-center'>
+              <div className='dark:text-background flex flex-col gap-y-2 text-center items-center'>
                 <Logo variant='map' />
                 <h3>{COMPANY_NAME_FULL}</h3>
                 <p>{`${tFooter('address')}, ${tFooter('city')}, ${tFooter('postalCode')}`}</p>
-                <Button variant='link' className='text-muted-foreground font-light'><a href={LINK_TO_MAP}>{tContacts('mapLinkText')}</a></Button>
+                <Button variant='link' className='dark:text-background font-light'><a href={LINK_TO_MAP}>{tContacts('mapLinkText')}</a></Button>
               </div>
             </Map>
           </aside>
