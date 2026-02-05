@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { cn } from "@/src/lib/utils";
 import { SOCIAL_LINKS } from "@/src/constants/links";
 import { Button } from "@/components/ui/button";
@@ -59,7 +57,7 @@ export function SocialLinks({ variant, className }: SocialLinksProps) {
       ))}
       {isSidebar && (
         <li>
-          <div className="flex flex-col justify-center items-center mx-auto h-32 w-0.5 bg-foreground-secondary mt-2" />
+          <div className="flex flex-col justify-center items-center mx-auto h-32 w-0.5 bg-accent-foreground mt-2" />
         </li>
       )}
     </ul>

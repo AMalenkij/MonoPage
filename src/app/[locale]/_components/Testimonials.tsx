@@ -62,7 +62,7 @@ export function Testimonials() {
         <h2 className="text-3xl xl:text-4xl font-semibold mb-8">{t('title')}</h2>
         <div className='sm:flex sm:justify-between px-10 mb-16 items-center'>
           <div className='flex'>
-            <GoogleLogo className='w-8 h-8 fill-foreground-secondary' />
+            <GoogleLogo className='w-8 h-8 fill-foreground' />
             <Button variant='link' className='xl:text-xl text-lg font-light'>
               <a href={LINK_TO_MAP} className="">{t('googleReviews')}</a>
             </Button>

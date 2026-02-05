@@ -57,7 +57,7 @@ export function Logo({ variant, className }: LogoProps) {
     );
   }
 
-  if (variant === "map") return <LogoSvg className="w-24 h-24 fill-m" />
+  if (variant === "map") return <LogoSvg className="w-24 h-24 fill-primary" />
 
   return null;
 }

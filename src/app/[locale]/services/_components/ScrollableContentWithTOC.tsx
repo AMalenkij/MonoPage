@@ -60,7 +60,7 @@ const TableOfContents: React.FC<{
         <li key={section.id}>
           <Button
             variant="link"
-            className={`cursor-pointer relative py-6 px-4 text-xl ${activeSection === section.id ? '' : 'text-primary/60'
+            className={`cursor-pointer relative py-6 px-4 text-xl text-foreground ${activeSection === section.id ? '' : 'text-foreground/60'
               }`}
             onClick={() => scrollToSection(section.id)}
           >
@@ -123,7 +123,7 @@ const SectionContent: React.FC<{
   return (
     <div
       ref={ref}
-      className={`mb-16 transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-50'}`}
+      className={`mb-16 transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-60'}`}
     >
       <h4 className="text-xs font-light flex flex-col gap-y-0.5 text-primary/60 uppercase">
         {section.title}

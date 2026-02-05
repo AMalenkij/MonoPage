@@ -61,8 +61,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <LenisProvider>
       {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row lg:items-end sm:h-[1100px] h-[900px] container mx-auto">
-        <section className="w-full lg:w-1/2 lg:h-2/3 flex-row  mt-12 sm:mt-10">
+      <div className="flex flex-col lg:flex-row lg:items-center container mx-auto">
+        <section className="w-full lg:w-1/2 lg:h-2/3 flex-row">
           <TextEffect className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold mb-4 sm:mb-7 lg:mb-10" as='h1' preset='fade'>
             {tHero('title')}
           </TextEffect>
@@ -83,13 +83,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </Dialog>
         </section>
         {/* <HeroImage /> */}
-        <div className="relative overflow-hidden xl:pr-20">
+        <div className="relative overflow-hidden px-12 md:px-20 md:pt-24 max-h-[93vh]">
           <StarIcon className="absolute top-[24%] left-[6%] sm:h-6 sm:w-6 h-5 w-5 fill-primary" />
           <StarIcon className="absolute right-[5%] sm:bottom-50 bottom-[6%] sm:h-6 sm:w-24 h-5 w-5 " />
-          <CirclePattern className='h-44 w-32 absolute left-[10%] bottom-[3%] -z-10' />
-          <BackgroundCircle className='absolute -bottom-1/4 w-full h-full -z-20 fill-popover' />
+          <CirclePattern className='h-34 w-24 md:h-44 md:w-32 absolute left-0 bottom-[3%] -z-10' />
+          <BackgroundCircle className='absolute -bottom-1/3 -right-0 w-full h-full -z-20 fill-secondary' />
           <ProfileHighlights
-            className='absolute right-[5%] top-0'
+            className='absolute md:right-[10%] md:top-[10%] right-[5%] top-[5%]'
             yearsOfExperience={8}
             rating={5}
             tYears={tHero('years')}
@@ -100,7 +100,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <Image
             src={Hero}
             alt={tAbout('firstImageAlt')}
-            className="object-contain w-full h-full max-h-[85vh] min-h-[75vh]"
+            className="object-contain h-full"
             priority
           />
         </div>
