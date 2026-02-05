@@ -65,7 +65,7 @@ export default async function Contacts({ params }: { params: Promise<{ locale: s
       transition={{ duration: 0.3, ease: 'easeInOut' }}
       viewOptions={{ margin: '0px 0px -350px 0px' }}
     >
-      <section className="bg-background-secondary pb-28">
+      <section className="bg-background pb-28">
         <header className="text-center pt-16 md:pt-20 lg:pt-28 ">
           <h1 className="text-3xl xl:text-4xl font-semibold mb-8">{tContacts('title')}</h1>
           <p className="xl:text-xl text-lg font-light  mb-24">{tContacts('subTitle')}</p>

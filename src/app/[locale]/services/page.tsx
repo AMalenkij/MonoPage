@@ -39,7 +39,7 @@ export default async function Services({ params }: { params: Promise<{ locale: s
 	}));
 
 	return (
-		<div className="relative bg-background-secondary">
+		<div className="relative bg-background">
 			<section className="container mx-auto py-16 md:py-20 lg:py-28">
 				<h2 className="text-3xl xl:text-4xl font-semibold mb-8">{t('title')}</h2>
 				<p className="xl:text-xl text-lg font-light mb-16 lg:max-w-2xl">{t('subTitle')}</p>

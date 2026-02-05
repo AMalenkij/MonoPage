@@ -15,7 +15,7 @@ export default async function About({ params }: { params: Promise<{ locale: stri
   return (
     <>
       {/* About Section */}
-      <article className='bg-background flex flex-col'>
+      <article className='bg-background-secondary flex flex-col'>
         <div className="flex flex-col-reverse md:flex-row md:items-center md:h-[900px] md:relative container mx-auto mt-16 md:mt-20 lg:mt-28">
           <CirclePattern className='h-56 w-32 absolute right-[40%] top-[3%] -rotate-12 hidden lg:block' />
 
