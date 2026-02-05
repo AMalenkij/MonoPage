@@ -192,7 +192,7 @@
       "nip": "NIP: 5842817098",
       "email": "legalfox.gdansk@gmail.com",
       "city": "Gdańsk",
-      "address": "ul.Jaśkowa Dolina 15/113",
+      "address": "ul.Jaśkowa Dolina 15/109",
       "postalCode": "80-252",
       "openingHours": "Mon – Fri: 08:00 – 16:00",
       "telephoneNumber": "+48 534 990 917",
@@ -213,7 +213,7 @@
       "home": "Home",
       "about": "About",
       "contacts": "Contacts",
-      "services": "services",
+      "services": "Services",
       "privacyPolicy": "Privacy Policy",
       "backToHome": "Return to the main page"
     }
