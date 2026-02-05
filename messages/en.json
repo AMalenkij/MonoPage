@@ -40,7 +40,8 @@
       "outOf": "out of 5",
       "title": "Legalization Services in Poland",
       "subTitle": "Comprehensive legalization solutions in Poland for individuals and companies. Expert support at all stages: from document processing to employment. Entrust us with your legal matters and focus on what's important.",
-      "heroButton": "Submit a request"
+      "heroButton": "Submit a request",
+      "servicesButton": "Services"
     },
     "ServicesSection": {
       "title": "Our Services",

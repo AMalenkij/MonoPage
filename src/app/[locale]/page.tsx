@@ -24,6 +24,8 @@ import Contacts from './contacts/page'
 import Services from './services/page'
 import { Testimonials } from './_components/Testimonials'
 
+import { SmoothScrollLink } from '@/components/core/SmoothScrollLink'
+
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -69,18 +71,23 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <TextEffect className="pl-1 text-lg font-light sm:text-2xl md:text-lg lg:text-lg mb-6 lg:mb-14" per='word' as='p' preset='blur'>
             {tHero('subTitle')}
           </TextEffect>
-          <Dialog>
-            <DialogTrigger asChild>
-              <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4 mb-10">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8" /></Button>
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-1/3">
-              <DialogHeader>
-                <DialogTitle className="text-3xl font-semibold mb-4">{tContacts('titleCard')}</DialogTitle>
-                <DialogDescription className="text-lg text-foreground">{tContacts('subTitleCard')}</DialogDescription>
-              </DialogHeader>
-              <ContactForm contactTranslations={contactTranslations} />
-            </DialogContent>
-          </Dialog>
+          <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4">{tHero('heroButton')}<ArrowTopRightIcon className="ml-1 sm:ml-2 w-6 h-6 sm:w-8 sm:h-8" /></Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-1/3">
+                <DialogHeader>
+                  <DialogTitle className="text-3xl font-semibold mb-4">{tContacts('titleCard')}</DialogTitle>
+                  <DialogDescription className="text-lg text-foreground">{tContacts('subTitleCard')}</DialogDescription>
+                </DialogHeader>
+                <ContactForm contactTranslations={contactTranslations} />
+              </DialogContent>
+            </Dialog>
+            <Button variant="ghost" className="text-sm sm:text-xl px-6 py-2 sm:px-10 sm:py-4" asChild>
+              <SmoothScrollLink href="#services">{tHero('servicesButton')}</SmoothScrollLink>
+            </Button>
+          </div>
         </section>
         {/* <HeroImage /> */}
         <div className="relative overflow-hidden px-12 md:px-20 md:pt-24 max-h-[93vh]">
@@ -106,7 +113,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </div>
       {/* Services Section */}
-      <Services params={params} />
+      <div id="services">
+        <Services params={params} />
+      </div>
       {/* About Section */}
       <About params={params} />
       {/* Feedback */}
