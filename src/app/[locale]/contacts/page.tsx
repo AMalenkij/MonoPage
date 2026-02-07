@@ -83,11 +83,11 @@ export default async function Contacts({ params }: { params: Promise<{ locale: s
           </article>
           <aside className="lg:w-1/2 w-full h-full shadow-sm">
             <Map location={LOCATION_IN_MAP}>
-              <div className='dark:text-background flex flex-col gap-y-2 text-center items-center'>
+              <div className='text-logo-text flex flex-col gap-y-2 text-center items-center'>
                 <Logo variant='map' />
                 <h3>{COMPANY_NAME_FULL}</h3>
                 <p>{`${tFooter('address')}, ${tFooter('city')}, ${tFooter('postalCode')}`}</p>
-                <Button variant='link' className='dark:text-background font-light'><a href={LINK_TO_MAP}>{tContacts('mapLinkText')}</a></Button>
+                <Button variant='link' className='font-light text-logo-text'><a href={LINK_TO_MAP}>{tContacts('mapLinkText')}</a></Button>
               </div>
             </Map>
           </aside>

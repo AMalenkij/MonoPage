@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
+
+
 :root {
   --background: hsl(37.5000 36.3636% 95.6863%);
-  --background-secondary: hsl(37.5000 32% 90%);
+  --background-alt: hsl(37.5000 32% 90%);
   --foreground: hsl(8.8889 27.8351% 19.0196%);
   --card: hsl(37.5000 36.3636% 95.6863%);
   --card-foreground: hsl(8.8889 27.8351% 19.0196%);
@@ -51,11 +53,16 @@
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
+  --brand-primary: hsl(140.7692 42.6230% 23.9216%);
+  --brand-secondary: hsl(132.8571 20% 13.7255%);
+
 }
 
 .dark {
+  --brand-primary: hsl(37.5000 32% 90%);
+  --brand-secondary: hsl(32.7273 26.8293% 91.9608%);
   --background: hsl(132.8571 20% 13.7255%);
-  --background-secondary: hsl(132.8571 15% 16%);
+  --background-alt: hsl(132.8571 15% 16%);
   --foreground: hsl(32.7273 26.8293% 91.9608%);
   --card: hsl(124.6154 12.6214% 20.1961%);
   --card-foreground: hsl(32.7273 26.8293% 91.9608%);
@@ -102,12 +109,16 @@
   --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
   --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+
 }
 
 @theme inline {
+
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-background-secondary: var(--background-secondary);
+  --color-background-alt: var(--background-alt);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);

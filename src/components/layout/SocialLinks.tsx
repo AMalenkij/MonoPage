@@ -21,10 +21,10 @@ export function SocialLinks({ variant, className }: SocialLinksProps) {
         <li key={social.name}>
           {isSidebar ? (
             <Button
-              variant="outline"
+              variant="link"
               size="icon"
               asChild
-              className="w-8 h-8 fill-primary"
+              className="w-8 h-8"
             >
               <a
                 href={social.url}
