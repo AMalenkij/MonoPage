@@ -98,7 +98,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
 
-      <body className={`${raleway.className} flex flex-col min-h-screen text-foreground bg-background-secondary`}>
+      <body className={`${raleway.className} flex flex-col min-h-screen text-foreground bg-background-alt`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
