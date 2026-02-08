@@ -3,6 +3,8 @@
 
 
 :root {
+  --logo-map: hsl(140.7692 42.6230% 23.9216%);
+  --text-map: hsl(132.8571 20% 13.7255%);
   --background: hsl(37.5000 36.3636% 95.6863%);
   --background-alt: hsl(37.5000 32% 90%);
   --foreground: hsl(8.8889 27.8351% 19.0196%);
@@ -113,7 +115,8 @@
 }
 
 @theme inline {
-
+  --color-logo-map: var(--logo-map);
+  --color-text-map: var(--text-map);
   --color-brand-primary: var(--brand-primary);
   --color-brand-secondary: var(--brand-secondary);
   --color-background: var(--background);
