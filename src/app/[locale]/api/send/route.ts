@@ -2,6 +2,11 @@ import { EmailTemplate } from '@/components/EmailTemplate';
 import { Resend } from 'resend';
 
 export async function POST(request: Request) {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('RESEND_API_KEY is missing');
+    return Response.json({ error: 'Internal Server Error: Missing API Key' }, { status: 500 });
+  }
+
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const { name, phone, message } = await request.json();
@@ -19,6 +24,7 @@ export async function POST(request: Request) {
 
     return Response.json(data);
   } catch (error) {
+    console.error('Error sending email:', error);
     return Response.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
