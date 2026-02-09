@@ -106,9 +106,10 @@ export function ContactForm({ contactTranslations }: { contactTranslations: Cont
         form.reset();
       } else {
         const errorData = await response.json();
+        console.error("Form submission error:", errorData);
         toast({
           title: "Error",
-          description: `${contactTranslations.errorMessage} ${errorData.error}`,
+          description: `${contactTranslations.errorMessage} ${errorData.error}${errorData.details ? `\nDetails: ${errorData.details}` : ''}`,
           variant: "destructive",
           duration: 15000
         })
