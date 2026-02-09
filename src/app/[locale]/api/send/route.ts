@@ -25,6 +25,6 @@ export async function POST(request: Request) {
     return Response.json(data);
   } catch (error) {
     console.error('Error sending email:', error);
-    return Response.json({ error: 'Internal Server Error' }, { status: 500 });
+    return Response.json({ error: 'Internal Server Error', details: error instanceof Error ? error.message : String(error) }, { status: 500 });
   }
 }
